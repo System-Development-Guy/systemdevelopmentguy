@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow, nosnippet, noimageindex"><meta name="referrer" content="no-referrer">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data: 'self'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'none'; font-src 'none'; base-uri 'none'; form-action 'none'">
-<title>Day 1 — Foundation for Datacenters and Connectivity</title>
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data: 'self'; media-src data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'none'; font-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Day 2 — Power, Cooling, PUE and Sustainability</title>
+<!-- Noindex is advisory, not access control. Keep this file offline, or protect it AND its attachments with server-side authentication before publishing. There is no universal HTML tag that prevents AI from reading public content. -->
 <style>
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:#233644;background:#f3f5f7;font:17px/1.7 system-ui,-apple-system,Segoe UI,sans-serif}nav{position:fixed;inset:0 auto 0 0;width:290px;overflow:auto;background:#152b3b;color:#fff;padding:28px 22px}nav strong{font-size:22px}nav ul{list-style:none;padding:0}nav li{margin:10px 0;font-size:14px;line-height:1.4}nav .level-2{padding-left:14px;font-size:12px}nav a{color:#dbe6ed;text-decoration:none}nav a:hover{color:#ffa569}main{margin:36px 40px 60px 330px;max-width:1000px;background:white;padding:48px 60px;border-radius:12px}h1,h2,h3{line-height:1.25;color:#18354a;scroll-margin-top:24px}h1{font-size:31px;margin-top:60px;border-top:4px solid #fc813d;padding-top:25px}h1:first-child{margin-top:0;font-size:40px}h2{font-size:25px;margin-top:42px}h3{font-size:21px;margin-top:28px}a{color:#a74710;overflow-wrap:anywhere}strong{font-weight:650}li{margin:5px 0}blockquote{margin:25px 0;padding:14px 24px;background:#fff3ea;border-left:4px solid #fc813d}blockquote p{margin:0}table{width:100%;border-collapse:collapse;margin:25px 0;font-size:15px}th{text-align:left;background:#19384d;color:white}td,th{padding:12px 14px;border:1px solid #dbe2e7}tr:nth-child(even){background:#f5f8fa}hr{border:0;border-top:1px solid #e3e9ed;margin:38px 0}.diagram{margin:25px 0;padding:20px 8px;background:#fafcfd;border:1px solid #e0e7ec;border-radius:8px;overflow:auto;text-align:center}.diagram svg{height:auto;max-width:100%}pre{white-space:pre-wrap}.missing{padding:15px;background:#fff4d9;font-size:14px}img{max-width:100%}
-@media(max-width:1000px){nav{position:static;width:auto;max-height:300px}main{margin:18px;padding:28px}}@media print{nav{display:none}body{background:white;font-size:11pt}main{margin:0;padding:0;max-width:none}h1{font-size:23pt}h2{font-size:18pt}h1,h2,h3{break-after:avoid}.diagram,tr,blockquote{break-inside:avoid}a{color:inherit;text-decoration:none}}
+.illustration,.video{margin:28px 0;padding:20px 12px;border:1px solid #e0e7ec;border-radius:8px;background:#fff}.illustration img{display:block;width:100%;height:auto}figcaption{font-size:13px;color:#617485;text-align:center;padding-top:10px}video{display:block;width:100%;border-radius:5px;background:#152b3b}.formula{padding:18px 12px;overflow-x:auto;background:#fafcfd;border-radius:7px;margin:22px 0;font-size:1.15em}math{font-family:"Cambria Math","STIX Two Math",math;font-size:1.12em}.missing{border-left:3px solid #fc813d;color:#735029} @media(max-width:1000px){nav{position:static;width:auto;max-height:300px}main{margin:18px;padding:28px}}@media print{nav{display:none}body{background:white;font-size:11pt}main{margin:0;padding:0;max-width:none}h1{font-size:23pt}h2{font-size:18pt}h1,h2,h3{break-after:avoid}.diagram,tr,blockquote{break-inside:avoid}a{color:inherit;text-decoration:none}}
 
 :root{--course-header-height:146px}
 .course-header{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid #dbe2e7;box-shadow:0 3px 12px #152b3b0a}
@@ -35,7 +36,7 @@ h1,h2,h3{scroll-margin-top:calc(var(--course-header-height) + 24px)}
 @media print{.course-header{position:static;box-shadow:none;border-bottom:1px solid #dbe2e7;margin-bottom:24px}.course-brand-row{padding:0 0 16px;height:auto}.course-tabs{display:none}.course-logo{width:95px;height:42px}.course-brand strong{font-size:18pt}h1,h2,h3{scroll-margin-top:0}}
 
 
-
+/* Partner logos: original uploaded images, preserving aspect ratio. */
 :root{--course-header-height:154px}
 .course-brand-row{height:96px}
 .course-logo{width:180px;height:64px;border:0;border-radius:0;background:transparent;letter-spacing:normal}
@@ -58,276 +59,1154 @@ h1,h2,h3{scroll-margin-top:calc(var(--course-header-height) + 24px)}
 <div class="course-logo"><img src="./../images/cedce-trans-logo-480x192.png" alt="CEDCE – Colleges for European Datacenter Education" decoding="async"></div>
 <div class="course-logo"><img src="./../images/UCL-vertikal.png" alt="UCL Erhvervsakademi og Professionshøjskole" decoding="async"></div>
 </div></div><div class="course-tabs" role="navigation" aria-label="Course days">
-<a class="course-tab" href="Day-1-FoundationforDatacentersAndConnectivity.html" aria-current="page">Day 1</a>
-<a class="course-tab" href="Day-2-Power-Cooling-PUE.html">Day 2</a>
+<a class="course-tab" href="Day-1-FoundationforDatacentersAndConnectivity.html" aria-disabled="true">Day 1</a>
+<a class="course-tab" href="Day-2-Power-Cooling-PUE.html" aria-current="page">Day 2</a>
 <a class="course-tab"" aria-disabled="true">Day 3<small>Coming soon</small></span>
 <span class="course-tab" aria-disabled="true">Day 4<small>Coming soon</small></span>
 <span class="course-tab" aria-disabled="true">Day 5<small>Coming soon</small></span></div></header><nav aria-label="Contents"><strong>Day 1</strong><p>Datacenters &amp; Connectivity</p><ul><li class="level-1"><a href="#section-0">Day 1 Foundation for Datacenters and Connectivity</a></li><li class="level-1"><a href="#section-1">1. The Role of the Data Center in Society</a></li><li class="level-2"><a href="#section-2">What do we use data centers for?</a></li><li class="level-2"><a href="#section-3">The Data Center as the Foundation of Digital Services</a></li><li class="level-2"><a href="#section-4">Why is High Availability Important?</a></li><li class="level-2"><a href="#section-5">Three Overall Roles</a></li><li class="level-1"><a href="#section-6">2. Introduction to Data Center Networking</a></li><li class="level-2"><a href="#section-7">What is Data Center Networking?</a></li><li class="level-2"><a href="#section-8">Campus, Backbone, and Data Center Networks</a></li><li class="level-2"><a href="#section-9">North–South Traffic</a></li><li class="level-2"><a href="#section-10">East–West Traffic</a></li><li class="level-2"><a href="#section-11">Network Components</a></li><li class="level-2"><a href="#section-12">Spine–Leaf Architecture</a></li><li class="level-2"><a href="#section-13">Management Network</a></li><li class="level-1"><a href="#section-14">3. Redundancy and Availability</a></li><li class="level-2"><a href="#section-15">Power Supply – N, N+1, and 2N</a></li><li class="level-1"><a href="#section-16">Network Redundancy</a></li><li class="level-2"><a href="#section-17">LAG – Link Aggregation Group</a></li><li class="level-2"><a href="#section-18">MLAG – Multi-Chassis Link Aggregation</a></li><li class="level-1"><a href="#section-19">Redundant Routing</a></li><li class="level-1"><a href="#section-20">Tier Classification and Networking</a></li><li class="level-1"><a href="#section-21">Cooling</a></li><li class="level-2"><a href="#section-22">Cooling Redundancy</a></li><li class="level-1"><a href="#section-23">Ventilation and Airflow</a></li><li class="level-2"><a href="#section-24">Hot Aisle and Cold Aisle Containment</a></li><li class="level-1"><a href="#section-25">Redundancy Must Be Viewed as an Integrated System</a></li><li class="level-1"><a href="#section-26">4. Exercice</a></li><li class="level-1"><a href="#section-27">Day 1 – Exercises</a></li><li class="level-2"><a href="#section-28">Fundamentals of Data Centers and Connectivity</a></li><li class="level-2"><a href="#section-29">Exercise 1 – The Role of a Data Center</a></li><li class="level-2"><a href="#section-30">Exercise 2 – Critical Digital Infrastructure</a></li><li class="level-2"><a href="#section-31">Exercise 3 – Campus, Backbone, or Data Center Network?</a></li><li class="level-2"><a href="#section-32">Exercise 4 – North–South and East–West Traffic</a></li><li class="level-2"><a href="#section-33">Exercise 5 – Top-of-Rack Switch</a></li><li class="level-2"><a href="#section-34">Exercise 6 – Traditional Network vs. Spine–Leaf</a></li><li class="level-2"><a href="#section-35">Exercise 7 – Design a Spine–Leaf Network</a></li><li class="level-2"><a href="#section-36">Exercise 8 – Management Network</a></li><li class="level-2"><a href="#section-37">Exercise 9 – N, N+1, and 2N</a></li><li class="level-2"><a href="#section-38">Exercise 10 – Power Redundancy</a></li><li class="level-2"><a href="#section-39">Exercise 11 – LAG vs. MLAG</a></li><li class="level-2"><a href="#section-40">Exercise 12 – Redundant Routing</a></li><li class="level-2"><a href="#section-41">Exercise 13 – Find the Single Points of Failure</a></li><li class="level-2"><a href="#section-42">Exercise 14 – Cooling and Airflow</a></li><li class="level-1"><a href="#section-43">Exercise 15 – Design a Highly Available Data Center</a></li></ul></nav><main><h1 id="section-0">Day 1 Foundation for Datacenters and Connectivity</h1>
-<p>K1
+<p>(K1, K2, K3, K4)
 Version 1.0.0</p>
-<h1 id="section-1">1. The Role of the Data Center in Society</h1>
-<p>A <strong>data center</strong> is the physical infrastructure where servers, storage systems, and network equipment operate the digital services used by businesses, public authorities, and citizens.</p>
-<p>Data centers can therefore be considered part of society’s <strong>critical digital infrastructure</strong> — similar to the power grid, telecommunications, and transportation infrastructure.</p>
-<h2 id="section-2">What do we use data centers for?</h2>
-<p>When we, for example:</p>
+<h1 id="section-1">1. Power chain</h1>
 <ul>
-<li>open a website</li>
-<li>send an email</li>
-<li>stream Netflix or YouTube</li>
-<li>use Microsoft 365</li>
-<li>pay with MobilePay or a payment card</li>
-<li>use MitID</li>
-<li>order products online</li>
-<li>use cloud services</li>
-<li>store photos online</li>
-<li>use AI services</li>
+<li>AC/DC. Spændingsfald, modstand, effekt, energitab, 1 og 3 faser, fasedrejning, cosinus phi</li>
+<li>Elforsyning, Generator, UPS, PDU</li>
+<li>Rack-level power-best practices</li>
+<li>Power + netværk: PoE, out-of-band management, redundans</li>
 </ul>
-<p>...our computer or phone will typically communicate with systems located in one or more data centers.</p>
-<p>A very simplified model looks like this:</p>
-<figure class="diagram"><pre class="mermaid">
-flowchart TD
+<p>A <strong>power chain</strong> describes the entire path that electrical energy follows from the utility grid to the individual IT equipment in a data center.</p>
+<p>A simplified chain may look like this:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
 
-    Bruger["User"]
-    ISP["Network / ISP"]
-    DC["Datacenter"]
+    Grid["Power Grid"] --&gt; Main["Main Distribution Board"]
 
-    Web["Webserver"]
-    App["Applikationsserver"]
-    DB["Database"]
-    Storage["Storage"]
+    Generator["Generator"] --&gt; Main
 
-    Bruger --&gt;|Internet| ISP
-    ISP --&gt; DC
-
-    DC --&gt; Web
-    DC --&gt; App
-    DC --&gt; DB
-    DC --&gt; Storage
+    Main --&gt; UPS["UPS"]
+    UPS --&gt; PDU["PDU"]
+    PDU --&gt; RackPDU["Rack PDU"]
+    RackPDU --&gt; Equipment["Server / Switch / Storage"]
+    Equipment --&gt; PSU["PSU"]
+    PSU --&gt; DC["DC Voltages til Elektronik"]
 </pre></figure>
 
 
-<h2 id="section-3">The Data Center as the Foundation of Digital Services</h2>
-<p>The purpose of a data center is not simply to house servers. It must provide the conditions required for IT systems to operate reliably:</p>
-<table>
-<thead>
-<tr>
-<th>Area</th>
-<th>Function of the Data Center</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Compute</td>
-<td>Servers perform calculations and run applications</td>
-</tr>
-<tr>
-<td>Storage</td>
-<td>Data is stored and protected</td>
-</tr>
-<tr>
-<td>Network</td>
-<td>Systems are connected to each other and to the Internet</td>
-</tr>
-<tr>
-<td>Power</td>
-<td>Equipment is supplied with stable electrical power</td>
-</tr>
-<tr>
-<td>Cooling</td>
-<td>Excess heat is removed</td>
-</tr>
-<tr>
-<td>Security</td>
-<td>Equipment and data are protected</td>
-</tr>
-<tr>
-<td>Redundancy</td>
-<td>Failures should preferably not result in downtime</td>
-</tr>
-<tr>
-<td>Monitoring</td>
-<td>Infrastructure is continuously monitored</td>
-</tr>
-</tbody></table>
-<h2 id="section-4">Why is High Availability Important?</h2>
-<p>If an ordinary private system goes down, it may affect only one person.</p>
-<p>If a large data center or a major cloud service goes down, it may affect:</p>
+<p>The purpose is not only to supply power. The power chain must also ensure:</p>
 <ul>
-<li>banks[^1]</li>
+<li>correct voltage    </li>
+<li>sufficient power capacity    </li>
+<li>protection against faults    </li>
+<li>backup during power outages    </li>
+<li>redundancy    </li>
+<li>monitoring    </li>
+<li>efficient power distribution</li>
 </ul>
-<p><a href="https://www.bankdata.dk/about/news/bankdata-selected-as-software-provider-for-al-sydbank">https://www.bankdata.dk/about/news/bankdata-selected-as-software-provider-for-al-sydbank</a></p>
-<p><a download="Bankdata.pdf" href="./../files/BankdataSelectedAsSoftwareProviderForALSydbank.pdf">Bankdata</a></p>
-<p> <img src="./../images/ALSydbankVaelgerBankdata.png" alt="AL Sybank" width="600"></p>
+<hr>
+<h2 id="section-2">AC and DC</h2>
+<h3>AC – Alternating Current</h3>
+<p><strong>AC (alternating current)</strong> means that the polarity of the voltage changes periodically.</p>
+<p>The Danish power grid normally uses:</p>
 <ul>
-<li><ul>
-<li>hospitals</li>
+<li><strong>230 V AC</strong> between phase and neutral    </li>
+<li><strong>400 V AC</strong> between two phases    </li>
+<li><strong>50 Hz</strong></li>
 </ul>
-</li>
-<li>businesses</li>
-<li>public authorities</li>
-<li>payment systems</li>
-<li>communication systems</li>
-<li>transportation</li>
-<li>thousands or millions of users</li>
+<p>For many <strong>commercial/data-center installations</strong>, <strong>120/208 V three-phase</strong> is also common:</p>
+<ul>
+<li><strong>120 V AC</strong> phase-to-neutral</li>
+<li><strong>208 V AC</strong> phase-to-phase</li>
+<li><strong>60 Hz</strong></li>
 </ul>
-<p>This is why data centers use concepts such as:</p>
-<figure class="diagram"><pre class="mermaid">flowchart   
-A[Availability] --&gt; B[Redundancy]  
-B --&gt; C[Resilience]  
-C --&gt; D[Disaster Recovery]  
+<p>50 Hz means that the voltage completes 50 cycles per second.</p>
+<p>IT equipment typically receives AC from a PDU:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    AC["230 V AC"] --&gt; PSU["Server PSU"]
+    PSU --&gt; DC["12 V / 5 V / 3.3 V DC"]
+</pre></figure>
+
+
+<hr>
+<h2 id="section-3">DC – Direct Current</h2>
+<p><strong>DC (direct current)</strong> has a fixed polarity.</p>
+<p>The electronics in:</p>
+<ul>
+<li>servers    </li>
+<li>switches    </li>
+<li>storage systems    </li>
+<li>routers</li>
+</ul>
+<p>primarily operate on DC.</p>
+<p>Therefore, a server normally contains a <strong>PSU – Power Supply Unit</strong>, which converts:</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+
+    AC["AC"] --&gt; DC["DC"]
 </pre></figure>
 
 
 <p>Eksempel:</p>
-<figure class="diagram"><pre class="mermaid">
-flowchart LR
-    User --&gt; Internet
+<figure class="diagram"><pre class="mermaid">flowchart TD
 
-    subgraph Datacenter
-        ServerA["Server A"]
-        ServerB["Server B"]
-    end
+    AC["230 V AC"] --&gt; PSU["PSU"]
 
-    Internet --&gt; ServerA
-    Internet --&gt; ServerB
-
-    ServerA --&gt; Service
-    ServerB --&gt; Service
+    PSU --&gt; V12["12 V DC"]
+    PSU --&gt; V5["5 V DC"]
+    PSU --&gt; V33["3.3 V DC"]
 </pre></figure>
 
 
-<p>If Server A fails, Server B can continue providing the service.</p>
-<p>The same principle is applied at many other levels:</p>
-<figure class="diagram"><pre class="mermaid">
-flowchart LR
-
-    IA["Internetforbindelse A"] --&gt; DC["Datacenter"]
-    IB["Internetforbindelse B"] --&gt; DC
-
-    SA["Strømforsyning A"] --&gt; IT["IT-udstyr"]
-    SB["Strømforsyning B"] --&gt; IT
-
-    SWA["Switch A"] --&gt; Server["Server"]
-    SWB["Switch B"] --&gt; Server
-</pre></figure>
-
-
-<p>Det er netop derfor, at <strong>redundans</strong> bliver et gennemgående emne, når man arbejder med datacentre.</p>
-<h3>This is why <strong>redundancy</strong> is a fundamental concept when working with data centers.</h3>
-<h2 id="section-5">Three Overall Roles</h2>
-<p>The role of the data center in society can be summarized in three main functions:</p>
-<p><strong>1. Process data</strong><br>Servers perform the calculations required by digital services.</p>
-<p><strong>2. Store data</strong><br>Databases, documents, images, backups, and other information are stored.</p>
-<p><strong>3. Transport data</strong><br>The network infrastructure connects servers, data centers, businesses, and users.</p>
-<p>In short, the role of the data center can be described as:</p>
-<blockquote>
-<p><strong>The data center is the physical infrastructure underlying the digital society.</strong></p>
-</blockquote>
-<p>This also provides a natural transition to the next question:</p>
-<p><strong>If society depends on the data center, what is required to keep the data center running when something fails?</strong></p>
-<p>From here, the discussion can naturally continue with <strong>power, cooling, networking, redundancy, and physical security</strong>.</p>
+<p>Some data centers also use DC distribution, for example 48 V DC, but AC distribution is very common up to the server PSU.</p>
 <hr>
-<h1 id="section-6">2. Introduction to Data Center Networking</h1>
-<ul>
-<li>What is data center networking?</li>
-<li>Differences between campus, backbone, and data center networks</li>
-<li>Traffic patterns: North–South vs. East–West</li>
-<li>Network components<ul>
-<li>Top-of-Rack (ToR) switches</li>
-<li>Aggregation/Core</li>
-<li>Spine–Leaf architecture</li>
-<li>Management network</li>
-</ul>
-</li>
-</ul>
-<h2 id="section-7">What is Data Center Networking?</h2>
-<p>The data center network is the part of the infrastructure that provides communication between systems within the data center and connectivity to networks outside the data center.</p>
-<p>Unlike many traditional networks, data center networks place a strong emphasis on:</p>
-<ul>
-<li>very high bandwidth</li>
-<li>low latency</li>
-<li>many simultaneous connections</li>
-<li>predictable traffic paths</li>
-<li>scalability</li>
-<li>redundant network connections</li>
-</ul>
-<p>An important difference is that a large amount of traffic does not necessarily travel between a user and a server. Much of the traffic occurs <strong>between systems inside the data center</strong>.</p>
-<hr>
-<h2 id="section-8">Campus, Backbone, and Data Center Networks</h2>
-<p>The three types of networks have different primary purposes.</p>
+<h2 id="section-4">Voltage, current, resistance, and power</h2>
+<p>The most important electrical quantities are:</p>
 <table>
 <thead>
 <tr>
-<th>Network type</th>
-<th>Primary purpose</th>
+<th>Quantity</th>
+<th>Symbol</th>
+<th>Unit</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>Campus network</strong></td>
-<td>Connects users and devices within an organization or geographical area</td>
+<td>Voltage</td>
+<td>U</td>
+<td>Volt (V)</td>
 </tr>
 <tr>
-<td><strong>Backbone network</strong></td>
-<td>Transports traffic between larger network segments or locations</td>
+<td>Current</td>
+<td>I</td>
+<td>Ampere (A)</td>
 </tr>
 <tr>
-<td><strong>Data center network</strong></td>
-<td>Connects systems within the data center and handles large amounts of internal traffic</td>
+<td>Resistance</td>
+<td>R</td>
+<td>Ohm (Ω)</td>
+</tr>
+<tr>
+<td>Power</td>
+<td>P</td>
+<td>Watt (W)</td>
+</tr>
+<tr>
+<td>Energy</td>
+<td>E</td>
+<td>Wh or kWh</td>
 </tr>
 </tbody></table>
-<p>A campus network is typically oriented toward:</p>
-<figure class="diagram"><pre class="mermaid">flowchart LR
-A[User] --&gt; B[Network]  
-B --&gt; C[Service]
-</pre></figure>
+<p>They are related, among other things, through <strong>Ohm&#39;s law</strong>:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>U</mi><mo>=</mo><mi>R</mi><mo>⋅</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">U={R}\cdot {I}</annotation></semantics></math></span></div>
 
 
-<p>A data center network must additionally be able to efficiently handle:</p>
-<figure class="diagram"><pre class="mermaid">flowchart LR
-A[Server A] --&gt; B[Server B]  
-B --&gt; C[Server C]
-</pre></figure>
+<p>and for simple DC/resistive AC:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo>=</mo><mi>U</mi><mo>⋅</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">P={U}\cdot {I}</annotation></semantics></math></span></div>
 
 
-<p>This distinction becomes important when we look at <strong>North–South and East–West traffic</strong>.</p>
+<p>Example:</p>
+<p>A server draws 2 A at 230 V:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo>=</mo><mrow><mn>230</mn><mi>V</mi></mrow><mo>⋅</mo><mrow><mn>2</mn><mi>A</mi></mrow><mo>=</mo><mn>460</mn><mi>W</mi></mrow><annotation encoding="application/x-tex">P={230V}\cdot {2A}=460W</annotation></semantics></math></span></div>
+
+
+<p>The server therefore uses approximately <strong>460 W</strong>, if we initially disregard the power factor.</p>
 <hr>
-<h2 id="section-9">North–South Traffic</h2>
-<p><strong>North–South traffic</strong> is traffic that moves between the data center and systems outside the data center.</p>
+<h2 id="section-5">Voltage drop</h2>
+<p>A cable has electrical resistance.</p>
+<p>When current flows through a cable, a voltage drop therefore occurs:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>U</mi><mrow><mi>d</mi><mi>r</mi><mi>o</mi><mi>p</mi></mrow></msub><mo>=</mo><mi>R</mi><mo>⋅</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">U_{drop}={R}\cdot {I}</annotation></semantics></math></span></div>
+
+<p>Example:</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+    PDU["PDU&lt;br/&gt;230 V"] --&gt;|"Cable"| Server["Server&lt;br/&gt;226 V"]
+</pre></figure>
+
+
+<p>The voltage drop is:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>U</mi><mrow><mi>d</mi><mi>r</mi><mi>o</mi><mi>p</mi></mrow></msub><mo>=</mo><mrow><mn>230</mn><mi>V</mi></mrow><mo>−</mo><mrow><mn>226</mn><mi>V</mi></mrow><mo>=</mo><mn>4</mn><mi>V</mi></mrow><annotation encoding="application/x-tex">U_{drop}={230V}-{226V}= 4V</annotation></semantics></math></span></div>
+
+
+<p>The greater the current flowing through the cable, the greater the voltage drop.</p>
+<p>Voltage drop is affected by factors such as:</p>
+<ul>
+<li>cable length    </li>
+<li>conductor cross-sectional area    </li>
+<li>conductor material    </li>
+<li>current    </li>
+<li>temperature</li>
+</ul>
+<p>A long, thin cable typically has greater resistance than a short, thick cable.</p>
+<hr>
+<h2 id="section-6">Resistance</h2>
+<p>Electrical resistance describes how much a conductor opposes the flow of current.</p>
+<p>Ohm&#39;s law:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>R</mi><mo>=</mo><mfrac><mi>U</mi><mi>I</mi></mfrac></mrow><annotation encoding="application/x-tex">R=\frac{U}{I}</annotation></semantics></math></span></div>
+
+<p>A cable is not a perfect conductor.</p>
+<p>In principle, it can be represented as:</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+
+    PDU["PDU"] --&gt; R["Cable resistance"] --&gt; Server["Server"]
+</pre></figure>
+
+
+<p>The resistance causes:</p>
+<ul>
+<li>voltage drop    </li>
+<li>heat generation    </li>
+<li>energy loss</li>
+</ul>
+<hr>
+<h2 id="section-7">Power and energy loss</h2>
+<p>Electrical power is measured in <strong>watts</strong>.</p>
+<p>For simple loads:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo>=</mo><mi>U</mi><mo>⋅</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">P={U}\cdot {I}</annotation></semantics></math></span></div>
+
+
+<p>However, some of the energy is lost as heat.</p>
+<p>The power loss in, for example, a cable can be described as:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>P</mi><mrow><mi>l</mi><mi>o</mi><mi>s</mi><mi>s</mi></mrow></msub><mo>=</mo><msup><mi>I</mi><mn>2</mn></msup><mo>⋅</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">P_{loss}={I^2}\cdot {R}</annotation></semantics></math></span></div>
+
+
+<p>This formula is very important.</p>
+<p>In particular, note:</p>
+<blockquote>
+<p>Power loss increases with the <strong>square of the current</strong>.</p>
+</blockquote>
+<p>If the current is doubled:</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+
+    A["I"] --&gt; B["2 x I"] 
+</pre></figure>
+
+
+<p>the loss becomes:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>P</mi><mrow><mi>l</mi><mi>o</mi><mi>s</mi><mi>s</mi></mrow></msub><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>2</mn><mi>I</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow><mo>⋅</mo><mi>R</mi><mo>=</mo><mn>4</mn><mo>⋅</mo><msup><mi>I</mi><mn>2</mn></msup><mo>⋅</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">P_{loss}={(2I)^2}\cdot {R}=4\cdot I^2\cdot R</annotation></semantics></math></span></div>
+
+
+<p>In other words, four times as large.</p>
+<p>This is one of the reasons why higher voltages can be advantageous when transmitting large amounts of power.</p>
+<p>For the same power:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo>=</mo><mi>U</mi><mo>⋅</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">P={U}\cdot {I}</annotation></semantics></math></span></div>
+
+
+<p>If the voltage is increased, the current can be reduced.</p>
+<hr>
+<h2 id="section-8">Energy</h2>
+<p><strong>Power</strong> and <strong>energy</strong> are not the same.</p>
+<p>Power:  Watt</p>
+<p>indicates how quickly energy is being used.</p>
+<p>Energy: </p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>W</mi><mi>h</mi><mo>=</mo><mi>W</mi><mo>⋅</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">Wh={W}\cdot {h}</annotation></semantics></math></span></div>
+
+
+<ul>
+<li>kWh - indicates how much energy has been used in total.</li>
+</ul>
+<p>If a server continuously uses 500 W for 10 hours:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>500</mn><mi>W</mi><mo>⋅</mo><mn>10</mn><mi>h</mi><mo>=</mo><mn>5000</mn><mi>W</mi><mi>h</mi><mo>=</mo><mn>5</mn><mi>k</mi><mi>W</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">500W\cdot 10h=5000Wh=5kWh</annotation></semantics></math></span></div>
+
+
+<hr>
+<h2 id="section-9">Single-phase power</h2>
+<p>With a standard 230 V supply, the following are typically used:</p>
+<p>L  = phase
+N = neutral
+PE = protective earth / ground</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+
+    L["L"] --- Load["Load"]
+    N["N"] --- Load
+
+    PE["PE"] --- Chassis["Chassis"]
+</pre></figure>
+
+
+
+<p>The voltage between Line and Neutral</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>V</mi><mo>=</mo><mi>L</mi><mo>−</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">V={L}-{N}</annotation></semantics></math></span></div>
+
+
+<p>is approximately: 230 V for a typical Danish installation.</p>
+<p>Smaller IT installations and ordinary electrical outlets may use single-phase power.</p>
+<hr>
+<h2 id="section-10">Three-phase power</h2>
+<p>Larger electrical installations often use three phases:</p>
+<ul>
+<li>L1 (phase)</li>
+<li>L2 (phase)</li>
+<li>L3 (phase)</li>
+<li>N</li>
+<li>PE</li>
+</ul>
+<p>The three AC signals are shifted by <strong>120°</strong> relative to one another.</p>
+<p>Simplified:</p>
+<h2 id="section-11">Sine og cosine – faseskift</h2>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>sin</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo stretchy="false">)</mo><mo>=</mo><mi>c</mi><mi>o</mi><mi>s</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\sin(x+\frac{\pi}{2}) = cos(x)</annotation></semantics></math></span></div>
+ 
+<figure class="video"
+        style="width: 100%; box-sizing: border-box; margin: 1.5rem 0;">
+
+  <video controls playsinline preload="metadata"
+         aria-label="Sine to cosine phase shift"
+         style="display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: #000;">
+
+    <source src="./..videos/SineToCosinePhaseShift.mp4"
+            type="video/mp4">
+
+    Your browser does not support HTML video.
+  </video>
+
+  <figcaption style="margin-top: 0.75rem; text-align: center;">
+    Sine to cosine — phase shift
+  </figcaption>
+
+</figure>
+
+<figure class="illustration"><img src="./../images/phase-shift-90dg.png" alt="Phase shift: 90°, 180°, and 0°"></a><figcaption>Phase shift: 90°, 180°, and 0°</figcaption></figure>
+
+
+<figure class="illustration"><img src="./../images/DegreesRadiansSineCosine.png" alt="Degrees, radians, sine, and cosine"></a><figcaption>Degrees, radians, sine, and cosine</figcaption></figure>
+
+
+<figure class="illustration"><img src="./../images/ThreePhasesSeparatedBy120dg.png" alt="Three phases separated by 120°"></a><figcaption>Three phases separated by 120°</figcaption></figure>
+
+
+<p>In Denmark, the following values are typical:</p>
+<ul>
+<li>L1 -&gt; N = 230 V</li>
+<li>L2 -&gt; N = 230 V</li>
+<li>L3 -&gt; N = 230 V</li>
+<li>L1 -&gt; L2 = 400 V</li>
+<li>L2 -&gt; L3 = 400 V</li>
+<li>L3 -&gt; L1 = 400 V</li>
+</ul>
+<p>Three-phase power is particularly relevant in data centers because very large amounts of power must be distributed.</p>
+<hr>
+<h2 id="section-12">Phase balancing</h2>
+<p>If a rack contains many single-phase servers, the load should be distributed across:</p>
+<ul>
+<li>L1</li>
+<li>L2</li>
+<li>L3</li>
+</ul>
+<p>Poor distribution:</p>
+<ul>
+<li>L1 = 30 A</li>
+<li>L2 = 8 A</li>
+<li>L3 = 7 A</li>
+</ul>
+<p>Better:</p>
+<ul>
+<li>L1 = 15 A</li>
+<li>L2 = 15 A</li>
+<li>L3 = 15 A</li>
+</ul>
+<p>This is called <strong>phase balancing</strong>.</p>
+<p>An unbalanced load means that one phase can become overloaded even though capacity is still available on the other phases.</p>
+<hr>
+<h2 id="section-13">Phase rotation</h2>
+<p><strong>Phase rotation</strong>, or phase sequence, describes the order of the three phases.</p>
+<p>Example:</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+L1("L1") --&gt; L2("L2")
+L2("L2") --&gt; L3("L3")
+</pre></figure>
+
+
+<p>or:</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+L1("L1") --&gt; L3("L3")
+L3("L3") --&gt; L2("L2")
+</pre></figure>
+
+
+<p>For ordinary server PSUs, this normally does not have the same importance as it does for electric motors.</p>
+<p>For a three-phase motor, an incorrect phase sequence can cause the motor to rotate in the opposite direction.</p>
+<p>It can therefore be very important for, for example:</p>
+<ul>
+<li>fans    </li>
+<li>pumps    </li>
+<li>compressors    </li>
+<li>cooling systems</li>
+</ul>
+<p>Phase rotation is therefore indirectly important in data centers because the cooling infrastructure often uses three-phase motors.</p>
+<hr>
+<h2 id="section-14">Cosine phi – cos φ</h2>
+<p>With AC, voltage and current are not necessarily completely in phase.</p>
+<p>There may be a phase shift:</p>
+<aside class="missing">Illustration not included in the supplied files.</aside>
+<!-- Original illustration: Blog_june_FR_sinus1-1886790019.png -->
+
+
+<p>The difference is described, among other things, by:</p>
+<p>cos(ϕ)</p>
+<p>and is often referred to as the <strong>power factor</strong>.</p>
+<p>The active power can be written as:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo>=</mo><mi>U</mi><mo>⋅</mo><mi>I</mi><mo>⋅</mo><mi>c</mi><mi>o</mi><mi>s</mi><mo stretchy="false">(</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P={U}\cdot {I}\cdot cos(\varphi )</annotation></semantics></math></span></div>
+
+<p>for a simple single-phase AC load.</p>
+<p>Example:</p>
+<ul>
+<li>U = 230 V</li>
+<li>I = 10 A</li>
+<li>cos φ = 0.8</li>
+</ul>
+<p>The active power is therefore:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo>=</mo><mrow><mn>230</mn><mi>V</mi></mrow><mo>⋅</mo><mrow><mn>10</mn><mi>A</mi></mrow><mo>⋅</mo><mn>0.8</mn><mo>=</mo><mn>1840</mn><mi>W</mi></mrow><annotation encoding="application/x-tex">P={230V}\cdot {10A}\cdot 0.8=1840W</annotation></semantics></math></span></div>
+
+
+<p>Not:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo>=</mo><mrow><mn>230</mn><mi>V</mi></mrow><mo>⋅</mo><mrow><mn>10</mn><mi>A</mi></mrow><mo>=</mo><mn>2300</mn><mi>W</mi></mrow><annotation encoding="application/x-tex">P={230V}\cdot {10A}=2300W</annotation></semantics></math></span></div>
+
+
+<hr>
+<h2 id="section-15">Power factor close to 1</h2>
+<p>Ideally, the target is:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>c</mi><mi>o</mi><mi>s</mi><mo stretchy="false">(</mo><mi>φ</mi><mo stretchy="false">)</mo><mo>≈</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">cos(\varphi )\approx1</annotation></semantics></math></span></div>
+
+
+<p>Modern server PSUs normally use <strong>Power Factor Correction (PFC)</strong> to achieve a good power factor.</p>
+<p>In large data centers, power factor is important because a poor power factor means that the infrastructure must handle more current to deliver the same useful power.</p>
+<hr>
+<h2 id="section-16">Power supply</h2>
+<p>The data center&#39;s normal energy source is typically the public utility grid.</p>
 <figure class="diagram"><pre class="mermaid">flowchart TD
 
-    EXT["External network"]
-    DC["Data Center"]
-
-    EXT --&gt;|"North–South"| DC
+    Grid["Grid"] --&gt; Transformer["Transformer"]
+    Transformer --&gt; Switchgear["Switchgear"]
+    Switchgear --&gt; UPS["UPS"]
+    UPS --&gt; PDU["PDU"]
+    PDU --&gt; Rack["Rack"]
 </pre></figure>
 
 
-<p>For example, this could be a client communicating with a service hosted in the data center.</p>
+<p>Large data centers may have multiple independent power paths.</p>
+<p>Example:</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+
+    GridA["Grid A"] --&gt; PathA["Power Path A"]
+    GridB["Grid B"] --&gt; PathB["Power Path B"]
+</pre></figure>
+
+
+<p>The goal is to avoid a <strong>Single Point of Failure</strong>.</p>
 <hr>
-<h2 id="section-10">East–West Traffic</h2>
-<p><strong>East–West traffic</strong> is traffic between systems inside the data center.</p>
-<figure class="diagram"><pre class="mermaid">
-flowchart LR
+<h2 id="section-17">Generator</h2>
+<p>The generator normally provides longer-term backup if the utility grid fails.</p>
+<p>Normal:</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
 
-    subgraph DC["Data Center"]
-        direction LR
+    Grid["Grid"] --&gt; UPS["UPS"]
+    UPS --&gt; Load["Load"]
+</pre></figure>
 
-        A["Server A"] &lt;--&gt;|"EAST–WEST"| B["Server B"]
-        B --&gt;|"EAST–WEST"| C["Server C"]
+
+<p>During a failure:</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+
+    Grid["Grid ✕"] 
+    UPS --&gt; Load["Load"]
+</pre></figure>
+
+
+<p>The problem is that the generator does not supply power instantaneously.</p>
+<p>It must:</p>
+<ol>
+<li>detect the power failure    </li>
+<li>start    </li>
+<li>reach the correct operating speed    </li>
+<li>stabilize voltage and frequency    </li>
+<li>connect to the load</li>
+</ol>
+<p>Therefore, a UPS is used between the utility grid/generator and the IT equipment.</p>
+<hr>
+<h2 id="section-18">UPS – Uninterruptible Power Supply</h2>
+<p>The UPS ensures that the equipment continues to receive power during the transition between the utility grid and the generator.</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    Grid["Grid"] --&gt; UPS["UPS"]
+    Battery["Battery"] ==&gt; UPS
+    UPS --&gt; Servers["Servers"]
+</pre></figure>
+
+
+
+<p>During a power failure:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    Grid["Grid ✕"]
+
+    Battery["Battery"] --&gt; UPS["UPS"]
+    UPS --&gt; Server["Server"]
+</pre></figure>
+
+
+<p>A UPS typically only has battery capacity for a limited period of time.</p>
+<p>Example:</p>
+<ul>
+<li>0 sec.       Grid fails</li>
+<li>0 sec. UPS battery takes the load</li>
+<li>10 sec. Generator starts</li>
+<li>20 sec. Generator stabilizes</li>
+<li>30 sec. Generator takes the load (substitutes dthe lost Grid)</li>
+</ul>
+<p>The UPS therefore does not necessarily need to power the data center for several hours. One of its purposes is to <strong>bridge the gap</strong> between a utility outage and the generator taking over.</p>
+<hr>
+<h2 id="section-19">PDU – Power Distribution Unit</h2>
+<p>A <strong>PDU</strong> distributes electrical power to the IT equipment.</p>
+<p>There are different levels of PDUs.</p>
+<p>Example:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    UPS["UPS"] --&gt; FacilityPDU["Facility PDU"]
+
+    FacilityPDU --&gt; Rack1["Rack 1"]
+    FacilityPDU --&gt; Rack2["Rack 2"]
+
+    Rack1 --&gt; RackPDU1["Rack PDU"]
+    Rack2 --&gt; RackPDU2["Rack PDU"]
+</pre></figure>
+
+
+<p>A rack PDU can resemble an advanced power strip, but data center PDUs may also include:</p>
+<ul>
+<li>current measurement    </li>
+<li>power measurement    </li>
+<li>temperature measurement    </li>
+<li>remote monitoring    </li>
+<li>alarms    </li>
+<li>individual outlet monitoring    </li>
+<li>remote switching</li>
+</ul>
+<hr>
+<h2 id="section-20">Rack-level power best practices</h2>
+<p>At rack level, good power design is primarily about avoiding failures and overloads.</p>
+<h2 id="section-21">A and B power</h2>
+<p>A very common model is:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    PowerA["Power A"] --&gt; PDUA["PDU A"]
+    PowerB["Power B"] --&gt; PDUB["PDU B"]
+
+    PDUA --&gt; PSUA["PSU A"]
+    PDUB --&gt; PSUB["PSU B"]
+
+    PSUA --&gt; Server["Server"]
+    PSUB --&gt; Server
+</pre></figure>
+
+
+<p>The server has two PSUs:</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+
+    PSUA["PSU A"] --&gt; PDUA["PDU A"]
+    PSUB["PSU B"] --&gt; PDUB["PDU B"]
+</pre></figure>
+
+
+<p>The key point is that they are actually connected to <strong>independent power paths</strong>.</p>
+<p>Poor design:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    UPS["UPS"]
+
+    UPS --&gt; PDUA["PDU A"]
+    UPS --&gt; PDUB["PDU B"]
+</pre></figure>
+
+
+<p>If the UPS fails:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    UPS["UPS ✕"]
+
+     PDUA["PDU A"]
+   PDUB["PDU B"]
+</pre></figure>
+
+
+<p>both lose power.</p>
+<p>There is therefore still a Single Point of Failure.</p>
+<hr>
+<h2 id="section-22">Load sizing</h2>
+<p>An important rule is:</p>
+<blockquote>
+<p>Neither redundant power path should be loaded so heavily that it cannot take over the entire load if the other path fails.</p>
+</blockquote>
+<p>Example:</p>
+<ul>
+<li>Rack load = 6 kW</li>
+<li>PDU A capacity = 8 kW</li>
+<li>pDU B capacity = 8 kW</li>
+</ul>
+<p>Normal operation:</p>
+<ul>
+<li>A = 3 kW</li>
+<li>B = 3 kW</li>
+</ul>
+<p>If B fails:</p>
+<ul>
+<li>A = 6 kW</li>
+<li>B = 0</li>
+</ul>
+<p>A must be able to handle the entire load.</p>
+<p>This is often called <strong>failover capacity</strong>.</p>
+<hr>
+<h2 id="section-23">Other rack-level best practices</h2>
+<p>You should, among other things:</p>
+<ul>
+<li>use separate A and B power paths    </li>
+<li>distribute server PSUs between A and B    </li>
+<li>document the connections    </li>
+<li>clearly label cables and PDUs    </li>
+<li>monitor power consumption    </li>
+<li>avoid overloads    </li>
+<li>balance the load across phases    </li>
+<li>ensure correct cable sizing    </li>
+<li>avoid unnecessarily long power cables    </li>
+<li>keep power and network cables organized    </li>
+<li>monitor rack temperature    </li>
+<li>plan capacity before installing new equipment</li>
+</ul>
+<p>Example of labeling:</p>
+<ul>
+<li><p>PDU-A1</p>
+</li>
+<li><p>PDU-B1</p>
+</li>
+<li><p>Server01 PSU1 -&gt; PDU-A1</p>
+</li>
+<li><p>Server01 PSU2 -&gt; PDU-B1</p>
+</li>
+</ul>
+<hr>
+<h2 id="section-24">Power and networking</h2>
+<p>The power infrastructure and the network infrastructure are closely related.</p>
+<p>A redundant network is not truly redundant if both network paths depend on the same power supply.</p>
+<p>Example:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+	PowerA["Power A"] --&gt; PDUA["PDU A"]
+	PowerB["Power B"] --&gt; PDUB["PDU B"]
+    
+    PDUA --&gt; SwitchA["Switch A"]
+    PDUB --&gt; SwitchB["Switch B"]
+    
+    SwitchA --&gt; Server["Server"]
+    SwitchB --&gt; Server["Server"]    
+</pre></figure>
+
+
+<p>Here, redundancy is maintained throughout the design.</p>
+<hr>
+<h2 id="section-25">PoE – Power over Ethernet</h2>
+<p><strong>Power over Ethernet</strong> makes it possible to carry both data and electrical power over the same Ethernet cable.</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    PoE["PoE Switch"]
+    AP["Access Point"]
+
+    PoE --&gt;|"Ethernet&lt;br&gt;Data + Power"| AP
+</pre></figure>
+
+
+<p>Typical PoE devices include:</p>
+<ul>
+<li>access points    </li>
+<li>IP phones    </li>
+<li>cameras    </li>
+<li>IoT devices    </li>
+<li>sensors</li>
+</ul>
+<p>The advantage is that the end device does not require its own local power supply.</p>
+<hr>
+<h2 id="section-26">Power chain with PoE</h2>
+<p>With PoE, the switch becomes part of the end device&#39;s power chain.</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    Grid["Grid"] --&gt; UPS["UPS"]
+    UPS --&gt; PDU["PDU"]
+    PDU --&gt; PoE["PoE Switch"]
+    PoE --&gt;|"Ethernet"| AP["Access Point"]
+</pre></figure>
+
+
+<p>This means that:</p>
+<p>If PoE switch fails  then not only does network fail but also: power fails for the PoE device.</p>
+<p>Critical PoE switches should therefore also be UPS-protected and, where appropriate, supplied redundantly.</p>
+<hr>
+<h2 id="section-27">Out-of-band management</h2>
+<p><strong>Out-of-band management – OOB</strong> is a separate management network used for administration, especially when the normal production network is experiencing problems.</p>
+<p>Example:</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+
+    subgraph PROD["Production network"]
+        NIC["Server NIC"] --&gt; SW["Switch"] --&gt; NET["Network"]
     end
 
-    linkStyle 0,1 stroke-width:4px
+    subgraph MGMT["Management network"]
+        BMC["Server BMC&lt;br/&gt;iDRAC / iLO / IPMI"] --&gt; OOB["OOB Switch"] --&gt; Admin["Admin"]
+    end
 </pre></figure>
 
 
-<p>Modern applications may consist of many services, databases, and other components. Therefore, a single external request may result in several internal network connections.</p>
-<p>This means that <strong>East–West traffic is a key design parameter in modern data center networks</strong>.</p>
+
+<p>Examples of management technologies:</p>
+<ul>
+<li>Dell iDRAC    </li>
+<li>HPE iLO    </li>
+<li>IPMI    </li>
+<li>Redfish    </li>
+<li>serial console    </li>
+<li>management interfaces on switches and routers</li>
+</ul>
 <hr>
-<h2 id="section-11">Network Components</h2>
-<h3>Top-of-Rack Switches</h3>
-<p>A <strong>Top-of-Rack switch (ToR)</strong> is a switch that is typically installed in or near a rack and connects the equipment in the rack to the data center network.</p>
+<h2 id="section-28">Why OOB is important</h2>
+<p>Imagine:</p>
+<p>If the Production Switch fails.</p>
+<p>In case management traffic also goes through this switch, the administrator can no longer reach the systems.</p>
+<p>With OOB:</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+
+    PROD["Production Network&lt;br/&gt;✕"]
+
+    Server["Server"] --&gt; OOB["OOB Switch"] --&gt; Admin["Administrator"]
+</pre></figure>
+
+
+<p>The administrator can still:</p>
+<ul>
+<li>restart the server    </li>
+<li>open a remote console    </li>
+<li>change BIOS settings    </li>
+<li>monitor hardware    </li>
+<li>configure network equipment    </li>
+<li>troubleshoot the production network</li>
+</ul>
+<hr>
+<h2 id="section-29">Power redundancy and network redundancy must work together</h2>
+<p>This is one of the most important principles.</p>
+<p>For example, you may have:</p>
 <figure class="diagram"><pre class="mermaid">flowchart TD
 
-    subgraph RACK["RACK"]
+    Server["Server"]
+
+    Server --&gt; SwitchA["Switch A"]
+    Server --&gt; SwitchB["Switch B"]
+</pre></figure>
+
+
+<p>This looks like a redundant network.</p>
+<p>But if both switches use the same PDU:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    Server["Server"]
+
+    Server --&gt; SwitchA["Switch A"]
+    Server --&gt; SwitchB["Switch B"]
+
+    SwitchA --&gt; PDUA["PDU A"]
+    SwitchB --&gt; PDUA
+</pre></figure>
+
+
+<p>there is still:</p>
+<figure class="diagram"><pre class="mermaid">flowchart
+       PDUA["PDU A"] --- SPF 
+       SPF --- Server
+</pre></figure>
+
+
+<p>A better design is:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    Server["Server"]
+
+    SwitchA["Switch A"] --&gt; Server
+    SwitchB["Switch B"] --&gt; Server
+
+
+	PDUA["PDU A"] --&gt; SwitchA 
+	PDUB["PDU B"] --&gt; SwitchB
+
+    UPSA["UPS A"] --&gt; PDUA  
+    UPSB["UPS B"] --&gt; PDUB  
+
+    PowerA["Power A"] --&gt; UPSA
+    PowerB["Power B"] --&gt; UPSB
+
+</pre></figure>
+
+
+<p>In this design, redundancy is considered throughout the entire infrastructure.</p>
+<hr>
+<h2 id="section-30">The key point</h2>
+<p>When designing power in a data center, you should not only ask:</p>
+<blockquote>
+<p>&quot;Does the server have two power supplies?&quot;</p>
+</blockquote>
+<p>You must trace the <strong>entire power chain backwards</strong>:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    Server["Server"]
+    PSU["PSU A / PSU B"]
+    PDU["PDU A / PDU B"]
+    UPS["UPS A / UPS B"]
+    Source["Generator / Utility"]
+    Distribution["Electrical Distribution"]
+
+    Server --&gt; PSU
+    PSU --&gt; PDU
+    PDU --&gt; UPS
+    UPS --&gt; Source
+    Source --&gt; Distribution
+</pre></figure>
+
+
+<p>And similarly for the network:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    Server["Server"]
+    NIC["NIC A / NIC B"]
+    Switch["Switch A / Switch B"]
+    Router["Router A / Router B"]
+    WAN["WAN A / WAN B"]
+
+    Server --&gt; NIC
+    NIC --&gt; Switch
+    Switch --&gt; Router
+    Router --&gt; WAN
+</pre></figure>
+
+
+<p><strong>True redundancy is only achieved when there is no longer a shared critical point further upstream in the chain.</strong></p>
+<p>This is exactly why the power chain, cooling chain, and network topology must be evaluated together in a data center design.</p>
+<h1 id="section-31">2. Cooling chain</h1>
+<p>A data center produces large amounts of heat. Servers, storage systems, switches, routers, and other active equipment convert a large portion of the electrical energy they consume into heat.</p>
+<p>The cooling chain describes the complete chain that transports this heat away from the IT equipment and out of the data center.</p>
+<aside class="missing">Illustration not included in the supplied files.</aside>
+<!-- Original illustration: 1000_F_1693101948_x6Y1Wqwyq1czlYTzfghcJhYJyDdfEjkX-2975400618.jpg -->
+
+
+<p>A simplified cooling chain could, for example, look like this:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    IT["IT Equipment"] --&gt; Hot["Hot Air"]
+    Hot --&gt; CoolingUnit["CRAC / CRAH / In-row Cooling"]
+    CoolingUnit --&gt; CoolingSystem["Cooling System"]
+    CoolingSystem --&gt; HeatRejection["Heat Rejection"]
+    HeatRejection --&gt; Outside["Outside Environment"]
+</pre></figure>
+
+
+<p>The goal is not simply to make the room cold. The most important objective is to ensure that <strong>sufficient cold air reaches the air intakes of the IT equipment</strong>, and that the hot air is subsequently transported away without being unnecessarily mixed with the cold air.</p>
+<hr>
+<h3>CRAC – Computer Room Air Conditioner</h3>
+<p>A <strong>CRAC</strong> is a cooling unit that cools the air in the data center using a direct refrigeration cycle with refrigerant.</p>
+<p>In principle, it works in the same way as a traditional air-conditioning system.</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    Hot["Hot Server Air"] --&gt; CRAC["CRAC"]
+    CRAC --&gt; Cold["Cold Air"]
+    Cold --&gt; Intake["Server Intake"]
+</pre></figure>
+
+
+<p>The CRAC unit draws in hot air, cools it, and returns the cooled air to the data center.</p>
+<p>CRAC solutions are particularly used in small and medium-sized installations where a separate chilled-water system may not be necessary.</p>
+<hr>
+<h3>CRAH – Computer Room Air Handler</h3>
+<p>A <strong>CRAH</strong> is functionally similar to a CRAC, but the cooling is normally provided by cold water from a central chilled-water system.</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    Chiller["Chiller"] --&gt; Water["Chilled Water"]
+    Water --&gt; CRAH["CRAH"]
+
+    Hot["Hot Air"] --&gt; CRAH
+
+    CRAH --&gt; Cold["Cold Air"]
+    Cold --&gt; Server["Server"]
+</pre></figure>
+
+
+<p>A CRAH unit typically contains:</p>
+<ul>
+<li>fans</li>
+<li>heat exchanger</li>
+<li>filters</li>
+<li>control systems and sensors</li>
+</ul>
+<p>The air passes through a heat exchanger, where heat is transferred from the air to the chilled water.</p>
+<p>CRAH systems are common in larger data centers because the production of cooling can be centralized.</p>
+<hr>
+<h2 id="section-32">Chilled water</h2>
+<p>In a <strong>chilled-water system</strong>, a central chiller produces cold water, which is circulated to components such as CRAH units.</p>
+<p>A highly simplified chain could be:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    Server["Server"] --&gt; Hot["Hot Air"]
+    Hot --&gt; CRAH["CRAH"]
+    CRAH --&gt; Transfer["Heat Transferred to Water"]
+    Transfer --&gt; Warm["Warm Water"]
+    Warm --&gt; Chiller["Chiller"]
+    Chiller --&gt; Cold["Cold Water"]
+    Cold --&gt; CRAH
+</pre></figure>
+
+
+<p>The system therefore consists of several dependent components:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+Chiller --- Pumps 
+Pumps --- Pipes
+Pipes --- CRAH
+CRAH --- Airflow
+Airflow --- Servers
+</pre></figure>
+
+
+<p>If one part of this chain fails, the available cooling capacity may be reduced.</p>
+<p>For this reason, redundancy is often implemented for components such as:</p>
+<ul>
+<li>chillers</li>
+<li>pumps</li>
+<li>CRAH units</li>
+<li>power supplies for the cooling system</li>
+<li>control systems</li>
+</ul>
+<p>As with the electrical power infrastructure, a data center may therefore have cooling capacity designed according to, for example, an <strong>N+1</strong> configuration.</p>
+<hr>
+<h2 id="section-33">In-row cooling</h2>
+<p>With <strong>in-row cooling</strong>, cooling units are installed directly between server racks.</p>
+<p>Example:</p>
+<figure class="diagram"><pre class="mermaid">
+flowchart TD
+
+    R1["Rack"]
+    R2["Rack"]
+    C1["`In-row / Cooling`"]
+    R3["Rack"]
+    R4["Rack"]
+    C2["`In-row Cooling`"]
+    R5["Rack"]
+
+    R1 ~~~ R2
+    R2 ~~~ C1
+    C1 ~~~ R3
+    R3 ~~~ R4
+    R4 ~~~ C2
+    C2 ~~~ R5
+</pre></figure>
+
+
+<p>Instead of transporting air over longer distances through the data center room, the cooling is placed closer to the heat source.</p>
+<p>This reduces the distance that both hot and cold air must travel.</p>
+<p>This can be particularly relevant for racks with high power density, for example:</p>
+<ul>
+<li>GPU servers</li>
+<li>HPC systems</li>
+<li>AI infrastructure</li>
+<li>blade servers</li>
+</ul>
+<p>Advantages include more precise cooling and shorter airflow paths.</p>
+<hr>
+<h2 id="section-34">Free cooling</h2>
+<p><strong>Free cooling</strong> means using the temperature of the outside environment to reduce the need for mechanical cooling.</p>
+<p>If the outside temperature is sufficiently low, the data center can, for example, use cold outside air or a heat exchanger to remove heat.</p>
+<p>Conceptually:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    Outside["Cold Outside Environment"]
+    HX["Heat Exchanger"]
+    Cooling["Datacenter Cooling System"]
+
+    Outside --&gt; HX
+    HX --&gt; Cooling
+</pre></figure>
+
+
+<p>This does not necessarily mean that outside air is blown directly into the data center.</p>
+<p>There are both:</p>
+<ul>
+<li>direct free cooling</li>
+<li>indirect free cooling</li>
+</ul>
+<p>With indirect free cooling, the data center air and outside air are typically separated by a heat exchanger.</p>
+<p>Free cooling can significantly reduce energy consumption because compressors and chillers can operate less frequently or, during some periods, be avoided entirely.</p>
+<hr>
+<h1 id="section-35">Airflow management</h1>
+<p>Airflow management is about controlling <strong>where the cold and hot air move</strong>.</p>
+<p>A typical data center uses <strong>cold aisle / hot aisle</strong> arrangements.</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+
+    Cold["COLD AISLE&lt;br/&gt;Cold Air"]
+    Server["SERVER&lt;br/&gt;Front → → → Rear"]
+    Hot["HOT AISLE&lt;br/&gt;Hot Air"]
+
+    Cold --&gt; Server
+    Server --&gt; Hot
+</pre></figure>
+
+
+<p>Servers normally draw in cold air at the front and exhaust hot air at the rear.</p>
+<p>Racks are therefore arranged so that:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    Fronts["Front → Front"] --&gt; Cold["COLD AISLE"]
+    Cold --&gt; Backs["Back → Back"]
+    Backs --&gt; Hot["HOT AISLE"]
+</pre></figure>
+
+
+<p>This makes it easier to keep hot and cold air separated.</p>
+<hr>
+<h2 id="section-36">Failure scenario 1 – Recirculation</h2>
+<p>One of the most important problems is <strong>recirculation</strong>.</p>
+<p>This occurs when hot air from the rear of the servers returns to the server air intakes.</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+
+    Cold["Cold Air"] --&gt; Server["Server"]
+    Server --&gt; Hot["Hot Air"]
+
+    Hot -.-&gt;|"Recirculation"| Server
+</pre></figure>
+
+
+
+<p>The server therefore receives warmer air than expected.</p>
+<p>This can result in:</p>
+<ul>
+<li>higher server temperatures</li>
+<li>higher fan speeds</li>
+<li>increased power consumption</li>
+<li>thermal throttling</li>
+<li>hardware failures</li>
+<li>in the worst case, shutdown</li>
+</ul>
+<h3>Solutions</h3>
+<p>Recirculation can be reduced through measures such as:</p>
+<ul>
+<li>hot aisle containment</li>
+<li>cold aisle containment</li>
+<li>correct rack placement</li>
+<li>correct placement of cooling units</li>
+<li>sealing around cables</li>
+<li>blanking panels in racks</li>
+</ul>
+<hr>
+<h2 id="section-37">Failure scenario 2 – Missing blanking panels</h2>
+<p>If servers are missing from a rack, there may be open rack units.</p>
+<p>Example:</p>
+<figure class="diagram"><pre class="mermaid">
+flowchart TD
+
+    Front["`Cold Aisle / Rack Front`"]
+
+    subgraph Rack["Rack"]
+        direction TB
+        S1["Server"]
+        S2["Server"]
+        Gap["`OPEN / SPACE`"]
+        S3["Server"]
+    end
+
+    Rear["`Hot Air / Rack Rear`"]
+
+    Front --&gt; S1
+    Front --&gt; S2
+    Front --&gt; S3
+
+    S1 --&gt; Rear
+    S2 --&gt; Rear
+    S3 --&gt; Rear
+
+    Rear -.-&gt;|"Hot-air recirculation through open rack units"| Gap
+    Gap -.-&gt; Front
+</pre></figure>
+
+
+
+<p>Hot air behind the rack can move through the empty spaces and return to the front.</p>
+<p>For this reason, <strong>blanking panels</strong> are used.</p>
+<figure class="diagram"><pre class="mermaid">
+flowchart TD
+
+    subgraph Rack["Rack"]
+        direction TB
+
+        S1["Server"]
+        S2["Server"]
+        P1["Blanking&lt;br&gt;Panel"]
+        P2["Blanking&lt;br&gt;Panel"]
+        S3["Server"]
+    end
+</pre></figure>
+
+
+
+<p>They may appear simple, but they can have a major impact on airflow.</p>
+<hr>
+<h2 id="section-38">Failure scenario 3 – Cable openings</h2>
+<p>Cables are often routed through:</p>
+<ul>
+<li>raised floors</li>
+<li>cable trays</li>
+<li>rack openings</li>
+<li>floor tiles</li>
+</ul>
+<p>Large openings around cables can create unwanted airflow paths.</p>
+<aside class="missing">Illustration not included in the supplied files.</aside>
+<!-- Original illustration: Screenshot-2025-07-30-141845-1321547204.png -->
+
+
+<p>The cold air may therefore escape in a location where it does not contribute to cooling the servers.</p>
+<p>Possible solutions include:</p>
+<ul>
+<li>brush strips</li>
+<li>sealing plates</li>
+<li>proper cable routing</li>
+<li>smaller and better-positioned openings</li>
+</ul>
+<hr>
+<h2 id="section-39">Failure scenario 4 – Too many cables</h2>
+<p>A rack may contain very large quantities of copper and fiber cables.</p>
+<p>If the cables are placed directly behind the server exhausts, they can act as a physical barrier.</p>
+<aside class="missing">Illustration not included in the supplied files.</aside>
+<!-- Original illustration: cable-management-vs-airflow-management-how-to-reconcile-the-two-1080x675-3132980875.jpg -->
+
+
+
+<aside class="missing">Illustration not included in the supplied files.</aside>
+<!-- Original illustration: 854b1895472eaa4980a115ef0d892277--cable-management-data-1472673925.jpg -->
+
+
+<p>The result may be higher temperatures behind the servers and poorer heat dissipation.</p>
+<p>Good cable management is therefore also part of cooling management.</p>
+<hr>
+<h1 id="section-40">Why network layout can affect airflow</h1>
+<p>Network design is not only a logical matter involving:</p>
+<ul>
+<li>VLANs</li>
+<li>routing</li>
+<li>switching</li>
+<li>redundancy</li>
+<li>bandwidth</li>
+</ul>
+<p>The physical network design also affects airflow in the data center.</p>
+<p>A poor design may, for example, result in very large cable bundles between racks.</p>
+<aside class="missing">Illustration not included in the supplied files.</aside>
+<!-- Original illustration: OIP-1538069006.jpg -->
+
+
+<aside class="missing">Illustration not included in the supplied files.</aside>
+<!-- Original illustration: OIP-3571071468.jpg -->
+
+
+
+<p>These cables can obstruct airflow if they are placed incorrectly.</p>
+<hr>
+<h2 id="section-41">Switch placement</h2>
+<p>The placement of switches also matters.</p>
+<p>A ToR switch may, for example, be installed at the top of the rack:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    subgraph RACK["Rack"]
         direction TB
 
         ToR["ToR Switch"]
@@ -343,1002 +1222,771 @@ flowchart LR
     end
 </pre></figure>
 
-   
-<p>The servers connect to the ToR switch:</p>
+
+<p>If the airflow direction of the switch does not match that of the servers, problems may occur.</p>
+<p>Servers may, for example, use:</p>
 <figure class="diagram"><pre class="mermaid">flowchart LR
-
-    S1["Server"]
-    S2["Server"]
-    S3["Server"]
-    S4["Server"]
-
-    ToR["ToR Switch"]
-    Network["Rest of the network"]
-
-    S1 --&gt; ToR
-    S2 --&gt; ToR
-    S3 --&gt; ToR
-    S4 --&gt; ToR
-
-    ToR --&gt; Network
+Front --&gt; Back
 </pre></figure>
 
 
-<p>The ToR switch therefore provides the servers with access to the rest of the network infrastructure.</p>
+<p>while a switch may be configured or designed for:</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+Back --&gt; Front
+</pre></figure>
+
+
+<p>The airflow directions therefore work against each other.</p>
+<p>This may result in the switch drawing hot air from the hot aisle into its air intake.</p>
+<p>When purchasing data center switches, <strong>airflow direction</strong> is therefore an important physical specification.</p>
+<p>Manufacturers often provide different fan and PSU variants for different airflow directions.</p>
 <hr>
-<h3>Aggregation and Core</h3>
-<p>In a traditional hierarchical network design, the network is often organized into several layers:</p>
+<h2 id="section-42">Centralized switching and large cable volumes</h2>
+<p>If many servers are connected to a central switch:</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+
+    R1["Server Rack"] --&gt; SW["Central Switch"]
+    R2["Server Rack"] --&gt; SW
+    R3["Server Rack"] --&gt; SW
+    R4["Server Rack"] --&gt; SW
+    R5["Server Rack"] --&gt; SW
+</pre></figure>
+
+
+<p>very large cable bundles may be created.</p>
+<p>With <strong>Top-of-Rack switching</strong>, the cabling can instead be kept more local:</p>
 <figure class="diagram"><pre class="mermaid">flowchart TD
 
-    Core["Core"]
-
-    Agg1["Aggregation"]
-    Agg2["Aggregation"]
-
-    ToR1["ToR"]
-    ToR2["ToR"]
-    ToR3["ToR"]
-    ToR4["ToR"]
-
-    Core --&gt; Agg1
-    Core --&gt; Agg2
-
-    Agg1 --&gt; ToR1
-    Agg1 --&gt; ToR2
-
-    Agg2 --&gt; ToR3
-    Agg2 --&gt; ToR4
+    ToR["ToR Switch"] --&gt; Servers["Servers"] 
+    ToR --&gt; |"Fiber uplinks"| Spine["Spine"]
 </pre></figure>
 
 
-<p>The <strong>aggregation layer</strong> combines connections from multiple switches.</p>
-<p>The <strong>core layer</strong> provides high-capacity connections between larger parts of the network.</p>
-<p>This hierarchical design is well known from traditional networks, but it can result in less efficient traffic paths when large amounts of traffic need to move between servers.</p>
+
+<p>This typically reduces the amount of horizontal server cabling between racks and can make both cable management and airflow management easier.</p>
+<p>However, this does not mean that ToR automatically provides better cooling. The physical installation and airflow direction must still be designed correctly.</p>
 <hr>
-<h2 id="section-12">Spine–Leaf Architecture</h2>
-<p>Another architecture that is widely used in modern data centers is <strong>Spine–Leaf</strong>.</p>
-<p>It consists of:</p>
-<ul>
-<li><strong>Leaf switches</strong></li>
-<li><strong>Spine switches</strong></li>
-</ul>
+<h2 id="section-43">The relationship between the systems</h2>
+<p>The cooling chain should therefore not be considered in isolation.</p>
 <figure class="diagram"><pre class="mermaid">flowchart TD
 
-    S1["Spine 1"]
-    S2["Spine 2"]
-
-    L1["Leaf 1"]
-    L2["Leaf 2"]
-    L3["Leaf 3"]
-    L4["Leaf 4"]
-
-    SV1["Servers"]
-    SV2["Servers"]
-    SV3["Servers"]
-    SV4["Servers"]
-
-    S1 --&gt; L1
-    S1 --&gt; L2
-    S1 --&gt; L3
-    S1 --&gt; L4
-
-    S2 --&gt; L1
-    S2 --&gt; L2
-    S2 --&gt; L3
-    S2 --&gt; L4
-
-    L1 --&gt; SV1
-    L2 --&gt; SV2
-    L3 --&gt; SV3
-    L4 --&gt; SV4
+    Power["Power"] --&gt; IT["IT Equipment"]
+    IT --&gt; Heat["Heat"]
+    Heat --&gt; Airflow["Airflow"]
+    Airflow --&gt; Cooling["Cooling System"]
+    Cooling --&gt; Rejection["Heat Rejection"]
 </pre></figure>
 
 
-<p>Each leaf switch is connected to every spine switch.</p>
-<p>When two servers connected to different leaf switches communicate, the traffic typically follows this path:</p>
-<figure class="diagram"><pre class="mermaid">flowchart 
-A[Server A] --&gt; B[Leaf]  
-B --&gt; C[Spine]
-C --&gt; D[Leaf]
-D --&gt; E[Server B]
-</pre></figure>
-
-
-<p>This means that traffic between different leaf switches normally traverses the same number of network hops.</p>
-<p>This makes the architecture particularly suitable for environments with large amounts of <strong>East–West traffic</strong>.</p>
-<hr>
-<h2 id="section-13">Management Network</h2>
-<p>Network equipment and servers must be manageable independently of normal production traffic.</p>
-<p>Therefore, a separate <strong>management network</strong> is often used.</p>
-<figure class="diagram"><pre class="mermaid">flowchart TD
-
-    MGMT["Management Network"]
-
-    SW["Switch"]
-    SRV["Server"]
-    FW["Firewall"]
-
-    MGMT --&gt; SW
-    MGMT --&gt; SRV
-    MGMT --&gt; FW
-</pre></figure>
-
-
-<p>The management network can, for example, be used for:</p>
-<ul>
-<li>configuring switches</li>
-<li>server administration</li>
-<li>monitoring</li>
-<li>troubleshooting</li>
-<li>accessing management interfaces</li>
-</ul>
-<p>It is typically separated logically or physically from the production network.</p>
-<hr>
-<p>I will therefore <strong>not</strong> explain topics such as the overall function of a data center, its role in society, cloud services, or servers and storage as general data center components again. From this point, we start directly where <strong>networking as a technical discipline</strong> begins.</p>
-<h1 id="section-14">3. Redundancy and Availability</h1>
-<p>A data center must be able to deliver its services continuously, even when individual components fail, require maintenance, or are taken out of service. Therefore, <strong>redundancy</strong> and <strong>availability</strong> are fundamental principles in the design of power, networking, and cooling infrastructure.</p>
-<p><strong>Redundancy</strong> means that critical components or connections exist in multiple instances so that another component can take over if one fails.</p>
-<p><strong>Availability</strong> describes the proportion of time that a service or system is available and operating as expected.</p>
-<p>An important design objective is therefore to avoid <strong>Single Points of Failure (SPOFs)</strong> — components where a single failure can cause a service to become unavailable.</p>
-<hr>
-<h2 id="section-15">Power Supply – N, N+1, and 2N</h2>
-<p>Servers, switches, storage systems, and cooling systems require a continuous power supply. Data centers are therefore normally designed with a redundant <strong>power chain</strong>.</p>
-<p>A typical power chain may, for example, consist of:</p>
-<figure class="diagram"><pre class="mermaid">flowchart 
-A[Utility grid] --&gt; B[generator]  
-B --&gt; C[UPS]
-C --&gt; D[PDU]
-D --&gt; E[rack PDU]
-E --&gt; F[server]
-</pre></figure>
-
-
-<p>Redundancy can be described using the <strong>N, N+1, and 2N</strong> models.</p>
-<h3>N</h3>
-<p><strong>N</strong> means that the infrastructure has exactly the capacity required to support the load.</p>
-<p>If, for example, the data center requires three UPS units to provide the necessary power:</p>
-<ul>
-<li>UPS 1</li>
-<li>UPS 2</li>
-<li>UPS 3</li>
-</ul>
-<p>N = 3</p>
-<p>All three units are required.</p>
-<p>If one UPS fails, there is no longer sufficient capacity.</p>
-<p>N therefore provides no actual component redundancy.</p>
-<hr>
-<h3>N+1</h3>
-<p>With <strong>N+1</strong>, one additional component is added beyond the number required.</p>
-<p>If three UPS units are required:</p>
-<p>N = 3</p>
-<ul>
-<li>UPS 1</li>
-<li>UPS 2</li>
-<li>UPS 3</li>
-<li>UPS 4  ← redundant unit</li>
-</ul>
-<p>The system can therefore continue operating even if one unit fails or is taken offline for maintenance.</p>
-<p>The principle is not limited to UPS systems. It can also be applied to, for example:</p>
-<ul>
-<li>generators</li>
-<li>power supplies</li>
-<li>cooling units</li>
-<li>pumps</li>
-<li>fans</li>
-</ul>
-<hr>
-<h3>2N</h3>
-<p>With <strong>2N</strong>, two complete and independent systems are established.</p>
-<figure class="diagram"><pre class="mermaid">flowchart LR
-
-    A["Power path A"] --&gt; Server["Server"]
-    B["Power path B"] --&gt; Server
-</pre></figure>
-
-
-
-<p>Each system can independently provide the required capacity.</p>
-<p>In a server rack, a server may, for example, have two power supplies:</p>
-<figure class="diagram"><pre class="mermaid">flowchart LR
-
-    PDUA["PDU A"] --&gt; PSUA["PSU A"] --&gt; Server["Server"]
-    PDUB["PDU B"] --&gt; PSUB["PSU B"] --&gt; Server
-</pre></figure>
-
-
-<p>PDU A and PDU B should be connected to different power paths.</p>
-<p>If the entire power path A fails, the server can continue operating through power path B.</p>
-<p>2N provides a high level of redundancy but also requires significantly more physical infrastructure and capacity.</p>
-<hr>
-<h1 id="section-16">Network Redundancy</h1>
-<p>Redundancy is just as important in the network as it is in the power infrastructure.</p>
-<p>A server should, for example, not depend on a single switch or a single connection if the service has high availability requirements.</p>
-<p>A redundant network may therefore look like this:</p>
-<figure class="diagram"><pre class="mermaid">flowchart TD
-
-    SW1["Switch 1"]
-    Server["Server"]
-    Network["Network"]
-    SW2["Switch 2"]
-
-    SW1 --&gt; Server
-    SW1 --&gt; Network
-
-    SW2 --&gt; Server
-    SW2 --&gt; Network
-</pre></figure>
-
-  
-<p>Several technologies can be used to provide redundancy.</p>
-<hr>
-<h2 id="section-17">LAG – Link Aggregation Group</h2>
-<p>A <strong>LAG (Link Aggregation Group)</strong> combines multiple physical network connections into a single logical connection.</p>
-<p>Example:</p>
-<figure class="diagram"><pre class="mermaid"> flowchart LR
-
-    A["Switch A"]
-    B["Switch B"]
-
-    A ==&gt;|"Link 1"| B
-    A ==&gt;|"Link 2"| B
-</pre></figure>
-
-
-<p>The two links can logically be treated as a single connection.</p>
-<p>This typically provides two benefits:</p>
-<ul>
-<li>redundancy</li>
-<li>the ability to distribute traffic across multiple links</li>
-</ul>
-<p>If one physical link fails, traffic can continue over the remaining link.</p>
-<p>A common standard used to dynamically establish link aggregation is <strong>LACP – Link Aggregation Control Protocol</strong>.</p>
-<p>A traditional LAG normally terminates on the same logical switch at each end.</p>
-<hr>
-<h2 id="section-18">MLAG – Multi-Chassis Link Aggregation</h2>
-<p>One limitation of a traditional LAG is that multiple cables do not necessarily protect against failure of the switch itself.</p>
-<p><strong>MLAG (Multi-Chassis Link Aggregation)</strong> makes it possible to terminate connections on two different physical switches while presenting them to the connected device as one logical connection.</p>
-<p>Example:</p>
-<figure class="diagram"><pre class="mermaid">flowchart TD
-
-    SW1["Switch 1"]
-    SW2["Switch 2"]
-    Server["Server"]
-
-    SW1 --&gt; Server
-    SW2 --&gt; Server
-</pre></figure>
-
-
-<p>The server can therefore have one connection to each switch.</p>
-<p>If:</p>
-<ul>
-<li>a cable fails</li>
-<li>a switch port fails</li>
-<li>or a switch fails</li>
-</ul>
-<p>the connection can continue through the other switch.</p>
-<p>MLAG is particularly relevant in data centers, where servers are often redundantly connected to two <strong>Top-of-Rack switches</strong>.</p>
-<hr>
-<h1 id="section-19">Redundant Routing</h1>
-<p>Redundancy must also operate at Layer 3.</p>
-<p>If a router or network path fails, traffic must be able to find an alternative path.</p>
-<p>Example:</p>
-<figure class="diagram"><pre class="mermaid">flowchart LR
-
-    Server["Server"]
-    R1["Router 1"]
-    R2["Router 2"]
-    Internet["Internet"]
-
-    Server --&gt; R1
-    Server --&gt; R2
-
-    R1 --&gt; Internet
-    R2 --&gt; Internet
-</pre></figure>
-
-
-<p>Routing protocols can automatically detect changes in the network and select a new route.</p>
-<p>In data centers, this can, for example, be achieved using:</p>
-<ul>
-<li>OSPF</li>
-<li>IS-IS</li>
-<li>BGP</li>
-</ul>
-<p>Modern spine–leaf networks typically have multiple possible Layer 3 paths between systems.</p>
-<figure class="diagram"><pre class="mermaid">flowchart TD
-
-    S1["Spine 1"]
-    S2["Spine 2"]
-
-    L1A["Leaf 1"]
-    L2A["Leaf 2"]
-    L1B["Leaf 1"]
-    L2B["Leaf 2"]
-
-    S1 --&gt; L1A
-    S1 --&gt; L2A
-
-    S2 --&gt; L1B
-    S2 --&gt; L2B    
-</pre></figure>
-
-
-<p>Using <strong>ECMP – Equal-Cost Multi-Path</strong>, multiple equal-cost routing paths can be used simultaneously.</p>
-<p>This provides both:</p>
-<ul>
-<li>redundancy</li>
-<li>better utilization of network capacity</li>
-</ul>
-<p>If a connection or spine switch fails, traffic can be sent through another path.</p>
-<hr>
-<h1 id="section-20">Tier Classification and Networking</h1>
-<p>Data centers can be classified according to different levels of redundancy and maintainability. One well-known model is <strong>Tier I–IV</strong>.</p>
-<p>It is important to understand that Tier classification applies to the data center&#39;s overall critical infrastructure and <strong>is not a classification of the network alone</strong>.</p>
-<p>However, the network design must support the desired level of availability.</p>
-<h3>Tier I</h3>
-<p>Basic infrastructure with limited redundancy.</p>
-<p>The network may, for example, contain individual connections or components where a failure can interrupt communication.</p>
-<figure class="diagram"><pre class="mermaid">flowchart LR
-A[Server] --- B[Switch]  
-B --- C[Router]
-</pre></figure>
-
-
-<p>There are several potential Single Points of Failure.</p>
-<hr>
-<h3>Tier II</h3>
-<p>Redundancy is introduced for selected components.</p>
-<p>On the network side, this may, for example, mean additional switches or links, but the infrastructure may still contain shared paths or common components.</p>
-<hr>
-<h3>Tier III</h3>
-<p>Tier III is designed around the principle of being <strong>concurrently maintainable</strong>.</p>
-<p>This means that planned maintenance of critical infrastructure must be possible without interrupting critical operations.</p>
-<p>From a networking perspective, this points toward, for example:</p>
-<ul>
-<li>redundant switches</li>
-<li>redundant uplinks</li>
-<li>multiple network paths</li>
-<li>redundant routing</li>
-<li>redundant management access</li>
-</ul>
-<p>Example:</p>
-<figure class="diagram"><pre class="mermaid">flowchart TD
-
-    S1["Spine 1"]
-    S2["Spine 2"]
-
-    L1["Leaf 1"]
-    L2["Leaf 2"]
-
-    Server["Server"]
-
-    S1 --&gt; L1
-    S1 --&gt; L2
-
-    S2 --&gt; L1
-    S2 --&gt; L2
-
-    L1 --&gt; Server
-    L2 --&gt; Server
-</pre></figure>
-
-
-<p>A single connection or switch can therefore be taken offline for maintenance without necessarily interrupting the server&#39;s network communication.</p>
-<hr>
-<h3>Tier IV</h3>
-<p>Tier IV has even higher requirements and is associated with <strong>fault tolerance</strong>.</p>
-<p>The infrastructure must be designed so that a single failure in a critical system does not interrupt critical operations.</p>
-<p>From a networking perspective, this means that the designer must pay particular attention to shared dependencies.</p>
-<p>For example, having two cables is not sufficient if both cables:</p>
-<ul>
-<li>run through the same cable tray</li>
-<li>connect to the same switch</li>
-<li>use the same power supply</li>
-<li>or depend on the same upstream device</li>
-</ul>
-<p>Redundancy is therefore not only about the <strong>number of components</strong>, but also about ensuring sufficient <strong>physical and logical separation</strong> between them.</p>
-<hr>
-<h1 id="section-21">Cooling</h1>
-<p>IT equipment converts a large proportion of the electrical energy it consumes into heat.</p>
-<p>If this heat is not removed, the temperature in the data center will increase. This can result in:</p>
-<ul>
-<li>reduced performance</li>
-<li>hardware failures</li>
-<li>automatic shutdowns</li>
-<li>shorter component lifetimes</li>
-</ul>
-<p>The cooling system is therefore a critical part of the data center infrastructure.</p>
-<p>Typical cooling technologies include, for example:</p>
-<ul>
-<li>CRAC – Computer Room Air Conditioner</li>
-<li>CRAH – Computer Room Air Handler</li>
-<li>chilled-water systems</li>
-<li>dry coolers</li>
-<li>free cooling</li>
-<li>direct liquid cooling</li>
-</ul>
-<p>The technology used depends, among other factors, on the size of the data center, climate, power density, and energy-efficiency requirements.</p>
-<hr>
-<h2 id="section-22">Cooling Redundancy</h2>
-<p>Like the power infrastructure, cooling can be designed according to principles such as:</p>
-<ul>
-<li>N</li>
-<li>N+1</li>
-<li>2N</li>
-</ul>
-<p>If four cooling units are required to remove the data center&#39;s heat load, an N+1 design could, for example, use five units:</p>
-<ul>
-<li>Cooling 1</li>
-<li>Cooling 2</li>
-<li>Cooling 3</li>
-<li>Cooling 4</li>
-<li>Cooling 5  ← redundant</li>
-</ul>
-<p>If one cooling unit fails or requires maintenance, the remaining units can still provide the required cooling capacity.</p>
-<p>This is important because a data center may still have functioning power and networking but nevertheless be forced to shut down servers if the cooling system fails.</p>
-<hr>
-<h1 id="section-23">Ventilation and Airflow</h1>
-<p>Cooling and ventilation are closely related, but they are not exactly the same.</p>
-<p><strong>Cooling</strong> is concerned with removing heat from the data center.</p>
-<p><strong>Ventilation and airflow management</strong> are concerned, among other things, with controlling how air moves through the data center and through the IT equipment.</p>
-<p>Most rack servers draw cool air in through the front and exhaust hot air through the rear.</p>
-<figure class="diagram"><pre class="mermaid">flowchart LR
-
-    Cold["Cold air"] --&gt; Server["Server"]
-    Server --&gt; Hot["Hot air"]
-</pre></figure>
-
-
-<p>Racks are therefore often arranged using <strong>cold aisle / hot aisle</strong> layouts.</p>
-<figure class="diagram"><pre class="mermaid">flowchart TB
-
-    Cold["COLD AISLE"]
-
-    R1["Rack&lt;br/&gt;→→"]
-    R2["Rack&lt;br/&gt;←←"]
-
-    Hot["HOT AIR"]
-
-    Cold --&gt; R1
-    Cold --&gt; R2
-
-    R1 --&gt; Hot
-    R2 --&gt; Hot
-</pre></figure>
-
-
-<p>The objective is to prevent hot exhaust air from mixing with the cold air entering the servers.</p>
-<hr>
-<h2 id="section-24">Hot Aisle and Cold Aisle Containment</h2>
-<p>Airflow can be improved further through <strong>containment</strong>.</p>
-<p>With <strong>cold aisle containment</strong>, the cold aisle is enclosed.</p>
-<p>With <strong>hot aisle containment</strong>, the hot aisle is enclosed.</p>
-<p>Example:</p>
-<figure class="diagram"><pre class="mermaid">flowchart LR
-
-    ColdL["COLD AISLE&lt;br/&gt;Cold air"] --&gt; RackL["Rack&lt;br/&gt;Front → Back"]
-    RackL --&gt; Hot["🔥 HOT AISLE&lt;br/&gt;&lt;b&gt;CONTAINED&lt;/b&gt;"]
-
-    ColdR["COLD AISLE&lt;br/&gt;Cold air"] --&gt; RackR["Rack&lt;br/&gt;Back ← Front"]
-    RackR --&gt; Hot
-</pre></figure>
-
-
-<p>Example:</p>
-<figure class="diagram"><pre class="mermaid">flowchart LR
-
-    ColdL["COLD"] --&gt; RackL["RACK"]
-    RackL --&gt; Hot["HOT AISLE&lt;br/&gt;&lt;b&gt;CONTAINED&lt;/b&gt;"]
-
-    ColdR["COLD"] --&gt; RackR["RACK"]
-    RackR --&gt; Hot
-</pre></figure>
-
-
-<p>The purpose is to reduce mixing between hot and cold air.</p>
-<p>This can:</p>
-<ul>
-<li>improve cooling efficiency</li>
-<li>reduce hotspots</li>
-<li>make temperatures more predictable</li>
-<li>reduce the amount of energy used for cooling</li>
-</ul>
-<hr>
-<h1 id="section-25">Redundancy Must Be Viewed as an Integrated System</h1>
-<p>A data center is not redundant simply because individual components exist in duplicate.</p>
-<p>The entire chain of dependencies must be analyzed.</p>
-<p>A server may, for example, have:</p>
-<ul>
-<li>2 × PSU</li>
-<li>2 × NIC</li>
-<li>2 × switches</li>
-<li>2 × uplinks</li>
-</ul>
-<p>but still have a Single Point of Failure if, for example, both switches receive power from the same PDU.</p>
-<p>A more robust design could therefore look like this:</p>
+<p>At the same time, airflow is affected by the rest of the physical infrastructure:</p>
 <figure class="diagram"><pre class="mermaid">
 flowchart TD
 
-    Server["SERVER"]
+    Rack["Rack Layout"]
+    Cable["`Cable&lt;br&gt;Management`"]
+    Network["`Network&lt;br&gt;Equipment`"]
+    Direction["`Airflow&lt;br&gt;Direction`"]
 
-    %% Network redundancy
-    Server --&gt; NIC1["NIC 1"]
-    Server --&gt; NIC2["NIC 2"]
+    Cooling["`Effective&lt;br&gt;Cooling`"]
 
-    NIC1 --&gt; SWA["Switch A"]
-    NIC2 --&gt; SWB["Switch B"]
-
-    SWA --&gt; RA["Router A"]
-    SWB --&gt; RB["Router B"]
-
-    RA --&gt; NPA["`Network / path A`"]
-    RB --&gt; NPB["`Network / path B`"]
-
-    %% Power redundancy
-    PPA["Power path A"] --&gt; PDUA["PDU A"]
-    PPB["Power path B"] --&gt; PDUB["PDU B"]
-
-    PDUA --&gt; PSUA["PSU A"]
-    PDUB --&gt; PSUB["PSU B"]
-
-    PSUA --&gt; Server
-    PSUB --&gt; Server
-
-    %% Avoid common power failure for the switches
-    PDUA --&gt; SWA
-    PDUB --&gt; SWB
-
-    %% Cooling redundancy
-    CoolingA["`Cooling /
-Ventilation A`"] --&gt; Server
-    CoolingB["`Cooling /
-Ventilation B`"] --&gt; Server
+    Rack --&gt; Cooling
+    Cable --&gt; Cooling
+    Network --&gt; Cooling
+    Direction --&gt; Cooling
 </pre></figure>
 
 
+<p>Good data center design therefore requires <strong>power, cooling, rack layout, cabling, and network design to be considered as parts of the same physical infrastructure</strong>.</p>
+<h1 id="section-44">3. PUE and Energy Efficiency</h1>
+<p>A data center does not only use energy for servers, storage, and network equipment. Energy is also used for:</p>
+<ul>
+<li>cooling</li>
+<li>ventilation and pumps</li>
+<li>UPS systems</li>
+<li>power distribution</li>
+<li>lighting</li>
+<li>monitoring and other technical infrastructure</li>
+</ul>
+<p><strong>PUE – Power Usage Effectiveness</strong> is used to describe how much of a data center’s total energy consumption is used by the IT equipment itself and how much is used by the supporting infrastructure.</p>
+<hr>
+<h2 id="section-45">The PUE Formula</h2>
+<p>PUE is calculated as:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">U</mi><mi mathvariant="normal">E</mi></mrow><mo>=</mo><mfrac><mtext>Total Facility Energy</mtext><mtext>IT Equipment Energy</mtext></mfrac></mrow><annotation encoding="application/x-tex">\mathrm{PUE}=\frac{\text{Total Facility Energy}}{\text{IT Equipment Energy}}</annotation></semantics></math></span></div>
 
-<p>At the same time, cooling and ventilation must be sufficiently redundant to allow the IT equipment to continue operating.</p>
-<p>Therefore, <strong>power, networking, and cooling should not be considered separate systems</strong>. Together, they form the critical data center infrastructure.</p>
-<p>The fundamental design principle is:</p>
-<blockquote>
-<p><strong>A single failure should not necessarily cause the service provided by the data center to become unavailable.</strong></p>
-</blockquote>
-<p>Redundancy is therefore achieved through a combination of <strong>additional capacity, alternative connection paths, physical separation, and automatic failover</strong>.</p>
-<h1 id="section-26">4. Exercice</h1>
-<h1 id="section-27">Day 1 – Exercises</h1>
-<h2 id="section-28">Fundamentals of Data Centers and Connectivity</h2>
-<p>The exercises are based on the topics covered during Day 1.</p>
-<p>Work individually or in groups as instructed by the teacher.</p>
-<p>For exercises involving diagrams, you may draw the diagram by hand or use a tool such as Mermaid, draw.io, Visio, or similar.</p>
-<hr>
-<h2 id="section-29">Exercise 1 – The Role of a Data Center</h2>
-<p><strong>Level: K1</strong></p>
-<p>Explain in your own words what a <strong>data center</strong> is.</p>
-<p>Your explanation must include the following concepts:</p>
+
+<p>The total energy consumption can be divided into:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Total Facility Energy</mtext><mo>=</mo><mtext>IT Equipment Energy</mtext><mo>+</mo><mtext>Non-IT Facility Energy</mtext></mrow><annotation encoding="application/x-tex">\text{Total Facility Energy}=\text{IT Equipment Energy}+\text{Non-IT Facility Energy}</annotation></semantics></math></span></div>
+
+<p>Therefore, PUE can also be written as:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">U</mi><mi mathvariant="normal">E</mi></mrow><mo>=</mo><mn>1</mn><mo>+</mo><mfrac><mtext>Non-IT Facility Energy</mtext><mtext>IT Equipment Energy</mtext></mfrac></mrow><annotation encoding="application/x-tex">\mathrm{PUE}=1+\frac{\text{Non-IT Facility Energy}}{\text{IT Equipment Energy}}</annotation></semantics></math></span></div>
+
+<p>Where:</p>
 <ul>
-<li>Compute    </li>
-<li>Storage    </li>
-<li>Network    </li>
-<li>Power    </li>
-<li>Cooling</li>
+<li><strong>IT Equipment Energy</strong> is the energy used by servers, storage systems, switches, routers, etc.</li>
+<li><strong>Non-IT Facility Energy</strong> is the energy used for cooling, ventilation, UPS losses, pumps, and other supporting infrastructure.</li>
 </ul>
-<p>Then give <strong>three examples of digital services</strong> that depend on data centers.</p>
+<p>The closer the PUE value is to <strong>1.0</strong>, the less additional energy is required to operate the infrastructure surrounding the IT equipment.</p>
 <hr>
-<h2 id="section-30">Exercise 2 – Critical Digital Infrastructure</h2>
-<p><strong>Level: K1–K2</strong></p>
-<p>Data centers can be considered part of society&#39;s <strong>critical digital infrastructure</strong>.</p>
-<p>Answer the following:</p>
-<ol>
-<li>What does <em>critical digital infrastructure</em> mean?    </li>
-<li>Name at least four parts of society that could be affected if a major data center became unavailable.    </li>
-<li>Explain why high availability is more important for a large data center than for an ordinary personal computer.</li>
-</ol>
-<hr>
-<h2 id="section-31">Exercise 3 – Campus, Backbone, or Data Center Network?</h2>
-<p><strong>Level: K1–K2</strong></p>
-<p>For each situation below, determine whether it primarily describes a:</p>
-<ul>
-<li>Campus network    </li>
-<li>Backbone network    </li>
-<li>Data center network</li>
-</ul>
-<h3>Situations</h3>
-<p>a. A network connects PCs, printers, and Wi-Fi access points at a university.
-b. A high-capacity network connects two large company locations.
-c. Hundreds of servers communicate with each other inside the same facility.
-d. Network infrastructure connects several large network segments.
-e. Employees connect their laptops to applications within their organization.</p>
-<p>Explain your choice for each situation.</p>
-<hr>
-<h2 id="section-32">Exercise 4 – North–South and East–West Traffic</h2>
-<p><strong>Level: K2</strong></p>
-<p>Classify each example as either <strong>North–South</strong> or <strong>East–West</strong> traffic.</p>
-<ol>
-<li>A user opens a website hosted in a data center.    </li>
-<li>A web server queries a database server in the same data center.    </li>
-<li>An application server sends data to another internal service.    </li>
-<li>A customer downloads a file from a server.    </li>
-<li>A database server communicates with a backup server inside the data center.</li>
-</ol>
-<p>Then explain:</p>
-<p><strong>Why can East–West traffic be particularly important when designing modern data center networks?</strong></p>
-<hr>
-<h2 id="section-33">Exercise 5 – Top-of-Rack Switch</h2>
-<p><strong>Level: K1–K2</strong></p>
-<p>A rack contains:</p>
-<ul>
-<li>10 servers    </li>
-<li>1 Top-of-Rack switch    </li>
-<li>1 uplink to the rest of the network</li>
-</ul>
-<p>Draw a simple network diagram showing how the equipment could be connected.</p>
-<p>Then answer:</p>
-<ol>
-<li>What is the purpose of the Top-of-Rack switch?    </li>
-<li>What happens to the servers&#39; network connectivity if the ToR switch fails?    </li>
-<li>Where is the Single Point of Failure in your design?</li>
-</ol>
-<hr>
-<h2 id="section-34">Exercise 6 – Traditional Network vs. Spine–Leaf</h2>
-<p><strong>Level: K2–K3</strong></p>
-<p>Compare these two network architectures:</p>
-<ul>
-<li>Traditional Core/Aggregation/Access design    </li>
-<li>Spine–Leaf design</li>
-</ul>
-<p>Create a table containing at least the following:</p>
+<h2 id="section-46">Example of PUE</h2>
+<p>Assume a data center has the following energy consumption:</p>
 <table>
 <thead>
 <tr>
-<th>Characteristic</th>
-<th>Traditional design</th>
-<th>Spine–Leaf</th>
+<th>Area</th>
+<th>Energy Consumption</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Network structure</td>
-<td></td>
-<td></td>
+<td>Servers</td>
+<td>600 kWh</td>
 </tr>
 <tr>
-<td>Traffic paths</td>
-<td></td>
-<td></td>
+<td>Storage</td>
+<td>150 kWh</td>
 </tr>
 <tr>
-<td>East–West traffic</td>
-<td></td>
-<td></td>
+<td>Network equipment</td>
+<td>50 kWh</td>
 </tr>
 <tr>
-<td>Scalability</td>
-<td></td>
-<td></td>
+<td><strong>Total IT</strong></td>
+<td><strong>800 kWh</strong></td>
 </tr>
 <tr>
-<td>Redundancy</td>
-<td></td>
-<td></td>
+<td>Cooling</td>
+<td>240 kWh</td>
+</tr>
+<tr>
+<td>UPS and distribution losses</td>
+<td>60 kWh</td>
+</tr>
+<tr>
+<td>Ventilation, etc.</td>
+<td>100 kWh</td>
+</tr>
+<tr>
+<td><strong>Total Facility</strong></td>
+<td><strong>1,200 kWh</strong></td>
 </tr>
 </tbody></table>
-<p>Then explain why <strong>Spine–Leaf</strong> is suitable for data centers with large amounts of East–West traffic.</p>
+<p>The PUE becomes:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mi>P</mi><mi>U</mi><mi>E</mi></mrow><mo>=</mo><mfrac><mn>1200</mn><mn>800</mn></mfrac><mo>=</mo><mn>1.5</mn></mrow><annotation encoding="application/x-tex">{PUE}=\frac{1200}{800} = 1.5</annotation></semantics></math></span></div>
+
+
+<p>This means that for every:</p>
+<p><strong>1 kWh</strong></p>
+<p>used by the IT equipment, an additional:</p>
+<p><strong>0.5 kWh</strong></p>
+<p>is used by the supporting infrastructure.</p>
+<p>This can therefore be illustrated as:</p>
+<p>1.0 kWh IT + 0.5 kWh supporting infrastructure =&gt; 1.5 kWh total energy consumption</p>
 <hr>
-<h2 id="section-35">Exercise 7 – Design a Spine–Leaf Network</h2>
-<p><strong>Level: K3</strong></p>
-<p>Design a small Spine–Leaf network containing:</p>
-<ul>
-<li>2 Spine switches    </li>
-<li>4 Leaf switches    </li>
-<li>8 servers</li>
-</ul>
-<p>Requirements:</p>
-<ul>
-<li>Every Leaf switch must connect to every Spine switch.    </li>
-<li>Each Leaf switch must connect to two servers.</li>
-</ul>
-<p>Draw the network.</p>
-<p>Then identify the path traffic would take from:</p>
-<p><strong>Server 1 → Server 8</strong></p>
-<p>Answer:</p>
-<ol>
-<li>How many switches does the traffic normally pass through?    </li>
-<li>What happens if Spine 1 fails?    </li>
-<li>Can Server 1 still communicate with Server 8?</li>
-</ol>
-<p>Explain why.</p>
-<hr>
-<h2 id="section-36">Exercise 8 – Management Network</h2>
-<p><strong>Level: K2</strong></p>
-<p>A data center contains:</p>
-<ul>
-<li>Servers    </li>
-<li>Switches    </li>
-<li>Routers    </li>
-<li>Firewalls</li>
-</ul>
-<p>The administrator wants to separate management traffic from normal production traffic.</p>
-<p>Design a simple <strong>management network</strong>.</p>
-<p>Your diagram must include:</p>
-<ul>
-<li>Management workstation    </li>
-<li>Management network    </li>
-<li>Switch    </li>
-<li>Server    </li>
-<li>Firewall</li>
-</ul>
-<p>Then explain:</p>
-<ol>
-<li>What is a management network?    </li>
-<li>Give three examples of what it can be used for.    </li>
-<li>Why can it be useful to separate management traffic from production traffic?</li>
-</ol>
-<hr>
-<h2 id="section-37">Exercise 9 – N, N+1, and 2N</h2>
-<p><strong>Level: K2</strong></p>
-<p>A data center requires <strong>four cooling units</strong> to handle its heat load.</p>
-<p>Determine how many cooling units are required for:</p>
-<ol>
-<li>N    </li>
-<li>N+1    </li>
-<li>2N</li>
-</ol>
-<p>Complete the table:</p>
-<table>
-<thead>
-<tr>
-<th>Redundancy model</th>
-<th align="right">Number of units</th>
-<th>Can one unit fail without losing required capacity?</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>N</td>
-<td align="right"></td>
-<td></td>
-</tr>
-<tr>
-<td>N+1</td>
-<td align="right"></td>
-<td></td>
-</tr>
-<tr>
-<td>2N</td>
-<td align="right"></td>
-<td></td>
-</tr>
-</tbody></table>
-<p>Explain the difference between the three redundancy models.</p>
-<hr>
-<h2 id="section-38">Exercise 10 – Power Redundancy</h2>
-<p><strong>Level: K3</strong></p>
-<p>A server contains:</p>
-<ul>
-<li>PSU A    </li>
-<li>PSU B</li>
-</ul>
-<p>The rack contains:</p>
-<ul>
-<li>PDU A    </li>
-<li>PDU B</li>
-</ul>
-<p>Design a redundant power solution for the server.</p>
-<p>Your diagram must show:</p>
-<ul>
-<li>Power path A    </li>
-<li>Power path B    </li>
-<li>PDU A    </li>
-<li>PDU B    </li>
-<li>PSU A    </li>
-<li>PSU B    </li>
-<li>Server</li>
-</ul>
-<p>Then explain why the following design is <strong>not sufficiently redundant</strong>:</p>
+<h1 id="section-47">What Primarily Drives PUE?</h1>
+<p>The largest factor outside the IT load itself is often <strong>cooling</strong>.</p>
+<p>Servers, storage systems, and network equipment consume electrical energy and convert almost all of this energy into heat.</p>
+<p>A simplified energy chain is therefore:</p>
 <figure class="diagram"><pre class="mermaid">flowchart TD
 
-    PDUA["PDU A"]
-
-    PSUA["PSU A"]
-    PSUB["PSU B"]
-
-    Server["Server"]
-
-    PDUA --&gt; PSUA
-    PDUA --&gt; PSUB
-
-    PSUA --&gt; Server
-    PSUB --&gt; Server
+    Electrical["Electrical Power"] --&gt; IT["IT Equipment"]
+    IT --&gt; Heat["Heat"]
+    Heat --&gt; Cooling["Cooling"]
+    Cooling --&gt; Rejection["Heat Rejection"]
 </pre></figure>
 
 
-<p>Identify the Single Point of Failure.</p>
+<p>The more energy the IT equipment consumes, the more heat the data center normally has to remove.</p>
+<p>The main factors affecting PUE are therefore typically:</p>
+<h3>Cooling</h3>
+<p>The cooling system can consume significant amounts of energy for:</p>
+<ul>
+<li>CRAC/CRAH units</li>
+<li>chillers</li>
+<li>pumps</li>
+<li>fans</li>
+<li>cooling towers</li>
+<li>heat rejection</li>
+</ul>
+<p>An inefficient cooling system increases PUE.</p>
 <hr>
-<h2 id="section-39">Exercise 11 – LAG vs. MLAG</h2>
-<p><strong>Level: K2–K3</strong></p>
-<p>Consider the following two designs.</p>
-<h3>Design A</h3>
+<h3>Airflow Management</h3>
+<p>Even an efficient cooling system can become inefficient if air does not move correctly through the data center.</p>
+<p>Example:</p>
 <figure class="diagram"><pre class="mermaid">flowchart TD
 
-    Server["Server"]
-    SwitchA["Switch A"]
-
-    Server ==&gt;|"LAG - Link 1"| SwitchA
-    Server ==&gt;|"LAG - Link 2"| SwitchA
+    Cold["Cold Air"] --&gt; Server["Server"]
+    Server --&gt; Hot["Hot Air"]
 </pre></figure>
 
 
-<p>The server has two network cables connected to the same switch using LAG.</p>
-<h3>Design B</h3>
-<figure class="diagram"><pre class="mermaid">flowchart TD
-
-    Server["Server"]
-
-    SwitchA["Switch A"]
-    SwitchB["Switch B"]
-
-    Server --&gt; SwitchA
-    Server --&gt; SwitchB
-</pre></figure>
-
-
-<p>The server has connections to two switches using MLAG.</p>
-<p>Answer:</p>
-<ol>
-<li>What redundancy does Design A provide?    </li>
-<li>What happens if one cable fails?    </li>
-<li>What happens if Switch A fails in Design A?    </li>
-<li>What additional protection does Design B provide?    </li>
-<li>Explain the main difference between <strong>LAG</strong> and <strong>MLAG</strong>.</li>
-</ol>
-<hr>
-<h2 id="section-40">Exercise 12 – Redundant Routing</h2>
-<p><strong>Level: K3</strong></p>
-<p>A server can reach the Internet using two routers:</p>
+<p>If hot and cold air mix:</p>
 <figure class="diagram"><pre class="mermaid">flowchart LR
 
-    Server["Server"]
+    Cold["Cold Air"] --&gt; Mixed["Mixed Air"]
+    Hot["Hot Air"] --&gt; Mixed
+</pre></figure>
 
-    RouterA["Router A"]
-    RouterB["Router B"]
 
-    Internet["Internet"]
+<p>the cooling system must work harder to maintain the required temperature at the server air intakes.</p>
+<p>Hot aisle/cold aisle layouts, containment, and proper cable management can therefore have a direct impact on energy consumption.</p>
+<hr>
+<h3>UPS and Power Distribution</h3>
+<p>Losses also occur when electrical power is transported and converted.</p>
+<p>Example:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
 
-    Server --&gt; RouterA
-    Server --&gt; RouterB
+    Utility["Utility Power"] --&gt; UPS["UPS"]
+    UPS --&gt; PDU["PDU"]
+    PDU --&gt; RackPDU["Rack PDU"]
+    RackPDU --&gt; PSU["Server PSU"]
+    PSU --&gt; Components["CPU / RAM / Storage"]
+</pre></figure>
 
-    RouterA --&gt; Internet
-    RouterB --&gt; Internet
+
+<p>None of these components are 100% efficient.</p>
+<p>For example, if a UPS has an efficiency of 95%, some of the electrical energy is lost as heat.</p>
+<p>This heat must then also be removed by the cooling system.</p>
+<p>This can create a cascading effect:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    Loss["Electrical Loss"] --&gt; Heat["Heat"]
+    Heat --&gt; Cooling["More Cooling"]
+    Cooling --&gt; Energy["Additional Energy Consumption"]
+</pre></figure>
+
+
+
+<hr>
+<h1 id="section-48">Relationship Between Networking, Servers, Cooling, and Power</h1>
+<p>The different parts of a data center cannot be considered in isolation.</p>
+<p>A highly simplified view is:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    Power["Electrical Power"]
+
+    Servers["Servers"]
+    Network["Network"]
+
+    Heat["Heat"]
+    Airflow["Airflow"]
+    Cooling["Cooling"]
+    Rejection["Heat Rejection"]
+
+    Power --&gt; Servers
+    Power --&gt; Network
+
+    Servers --&gt; Heat
+    Network --&gt; Heat
+
+    Heat --&gt; Airflow
+    Airflow --&gt; Cooling
+    Cooling --&gt; Rejection
+</pre></figure>
+
+
+<p>When the IT load increases, the following normally increase as well:</p>
+<ol>
+<li>power consumption</li>
+<li>heat generation</li>
+<li>cooling demand</li>
+</ol>
+<p>There is therefore a close relationship between <strong>compute, networking, electrical power, and cooling</strong>.</p>
+<hr>
+<h2 id="section-49">The Impact of Networking</h2>
+<p>Network equipment normally represents only part of the total IT power consumption, but network design can affect both power consumption and cooling requirements.</p>
+<p>For example, a design containing many unnecessary switches can result in:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    Switches["More Switches"] --&gt; Power["More Electrical Power"]
+    Power --&gt; Heat["More Heat"]
+    Heat --&gt; Cooling["More Cooling"]
+    Cooling --&gt; Energy["Higher Total Energy Consumption"]    
+</pre></figure>
+
+
+<p>In addition, the physical placement of switches and cables can affect airflow.</p>
+<p>A large cable bundle behind a server can, for example, obstruct the exhaust airflow:</p>
+<aside class="missing">Illustration not included in the supplied files.</aside>
+<!-- Original illustration: OIP-3571071468.jpg -->
+
+
+<p>The result can be higher temperatures around the equipment and an increased need for ventilation and cooling.</p>
+<hr>
+<h1 id="section-50">Examples of Improvements</h1>
+<p>PUE can be improved at several different levels.</p>
+<h3>1. Better Airflow Management</h3>
+<p>For example:</p>
+<ul>
+<li>hot aisle/cold aisle</li>
+<li>blanking panels in unused rack units</li>
+<li>sealing cable openings</li>
+<li>correct equipment placement</li>
+<li>hot aisle or cold aisle containment</li>
+</ul>
+<p>The objective is to reduce mixing between hot and cold air.</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    Cold["Cold Aisle"] --&gt; Servers["Servers"]
+    Servers --&gt; Hot["Hot Aisle"]
+</pre></figure>
+
+
+<hr>
+<h3>2. Increase the Cold-Air Temperature</h3>
+<p>A data center does not necessarily need to be very cold.</p>
+<p>If the cooling system attempts to keep the entire room at an unnecessarily low temperature, more energy is consumed than necessary.</p>
+<p>Instead, the focus should be on the temperature at the:</p>
+<p><strong>IT equipment air intake.</strong></p>
+<hr>
+<h3>3. Free Cooling</h3>
+<p>When outdoor temperatures allow it, outside air or low outdoor temperatures can be used directly or indirectly for cooling.</p>
+<p>This can reduce the need for traditional chillers and compressors.</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    Outside["Cold Outside Environment"] --&gt; Free["Free Cooling"]
+    Free --&gt; Cooling["Cooling System"]
+    Cooling --&gt; DC["Datacenter"]
+</pre></figure>
+
+
+<p>This is particularly relevant in cooler climates.</p>
+<hr>
+<h3>4. More Efficient IT Equipment</h3>
+<p>If the same workload can be handled by fewer servers, the total energy requirement can be reduced.</p>
+<p>Example:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    Light["20 Lightly Utilized Servers"] --&gt; Virtualization["Virtualization / Consolidation"]
+    Virtualization --&gt; High["8 Highly Utilized Servers"]
+</pre></figure>
+
+
+<p>This can reduce:</p>
+<ul>
+<li>IT power consumption</li>
+<li>heat generation</li>
+<li>cooling demand</li>
+</ul>
+<hr>
+<h3>5. Efficient UPS Systems</h3>
+<p>UPS systems have different efficiency levels depending on their technology and load.</p>
+<p>A UPS system operating far below its optimal load may be less energy-efficient.</p>
+<p>Correct sizing can therefore be important.</p>
+<hr>
+<h3>6. Efficient Power Supplies</h3>
+<p>Server PSUs convert, for example:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    AC["230 V AC"] --&gt; PSU["Server PSU"]
+    PSU --&gt; DC["12 V / 5 V / 3.3 V DC"]
+</pre></figure>
+
+
+<p>This conversion causes energy losses.</p>
+<p>More efficient PSUs result in:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    Loss["Less Electrical Loss"] --&gt; Heat["Less Heat"]
+    Heat --&gt; Cooling["Less Cooling Required"]
+</pre></figure>
+
+
+<hr>
+<h3>7. More Efficient Network Architecture</h3>
+<p>The network can be optimized through:</p>
+<ul>
+<li>fewer unnecessary switches</li>
+<li>better port utilization</li>
+<li>energy-efficient switches</li>
+<li>correctly sized links</li>
+<li>consolidation of network equipment</li>
+<li>proper physical cable management</li>
+</ul>
+<p>However, redundancy must still be prioritized.</p>
+<p>For example, a redundant switch should not be removed solely to improve PUE if doing so creates a <strong>Single Point of Failure</strong>.</p>
+<hr>
+<h1 id="section-51">PUE Should Be Interpreted with Care</h1>
+<p>A low PUE primarily means that the infrastructure surrounding the IT equipment is energy-efficient.</p>
+<p>It does <strong>not necessarily mean that the IT equipment itself is being used efficiently</strong>.</p>
+<p>Consider two data centers:</p>
+<p>Data Center A with PUE = 1.20</p>
+<p>Data Center B with PUE = 1.40</p>
+<p>At first glance, one might assume that Data Center A is always better.</p>
+<p>However, if Data Center A contains 10,000 servers that are almost idle, while Data Center B has very high server utilization, PUE does not tell the whole story.</p>
+<p>PUE measures:</p>
+<blockquote>
+<p><strong>How efficiently the data center facility infrastructure supports the IT load.</strong></p>
+</blockquote>
+<p>It does not directly measure:</p>
+<blockquote>
+<p><strong>How much useful work the IT systems perform per kWh.</strong></p>
+</blockquote>
+<hr>
+<h2 id="section-52">The Key Relationship</h2>
+<p>For students, PUE can therefore be viewed as a relationship between all parts of the physical infrastructure:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+
+    Workload["IT Workload"] --&gt; IT["Servers + Storage&lt;br/&gt;+&lt;br/&gt;Networking"]
+    IT --&gt; Power["IT Power"]
+    Power --&gt; Heat["Heat"]
+    Heat --&gt; Airflow["Airflow"]
+    Airflow --&gt; Cooling["Cooling"]
+    Cooling --&gt; Facility["Facility Power"]
+    Facility --&gt; PUE["PUE"]
+</pre></figure>
+
+
+<p>PUE is therefore a useful example of why <strong>power, cooling, rack design, servers, and networking cannot be optimized independently of each other</strong>.</p>
+<h1 id="section-53">4. Exercises – Day 2</h1>
+<p>The exercises focus on <strong>power chain, cooling chain, and PUE</strong>. The first exercises focus on fundamental understanding, while the final exercises require you to combine several parts of the material and analyse a data center as an integrated system.</p>
+<hr>
+<h2 id="section-54">Exercise 1 – AC, DC, Voltage, and Power</h2>
+<p>A server is connected to <strong>230 V AC</strong> and draws <strong>2.5 A</strong>.</p>
+<ol>
+<li>Calculate the server&#39;s power consumption, assuming a power factor of 1.</li>
+<li>How many watts does the server use?</li>
+<li>How many kWh does the server use over 24 hours?</li>
+<li>Why do the server&#39;s internal components not receive 230 V AC directly?</li>
+<li>Briefly describe the function of the server&#39;s PSU.</li>
+</ol>
+<p>Use:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo>=</mo><mi>U</mi><mo>⋅</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">P=U\cdot I</annotation></semantics></math></span></div>
+
+
+<p>and:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>E</mi><mo>=</mo><mi>P</mi><mo>⋅</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">E=P\cdot t</annotation></semantics></math></span></div>
+
+
+<hr>
+<h2 id="section-55">Exercise 2 – Voltage Drop and Resistance</h2>
+<p>A cable between a PDU and a rack has a total resistance of:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>R</mi><mo>=</mo><mn>0.15</mn><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">R=0.15 \Omega </annotation></semantics></math></span></div>
+
+
+<p>The current through the cable is:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>I</mi><mo>=</mo><mn>10</mn><mi>A</mi></mrow><annotation encoding="application/x-tex">I=10 A</annotation></semantics></math></span></div>
+
+
+<ol>
+<li>Calculate the voltage drop in the cable.</li>
+<li>Calculate the power loss in the cable.</li>
+<li>What happens to the power loss if the current is doubled?</li>
+<li>What happens to the lost electrical energy?</li>
+<li>Explain why cable sizing is important in a data center.</li>
+</ol>
+<p>Use:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>U</mi><mo>=</mo><mi>R</mi><mo>⋅</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">U=R\cdot I</annotation></semantics></math></span></div>
+
+
+<p>and:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>P</mi><mrow><mi>l</mi><mi>o</mi><mi>s</mi><mi>s</mi></mrow></msub><mo>=</mo><msup><mi>I</mi><mn>2</mn></msup><mi>R</mi></mrow><annotation encoding="application/x-tex">P_{loss}=I^2R</annotation></semantics></math></span></div>
+
+
+<hr>
+<h2 id="section-56">Exercise 3 – Single-Phase and Three-Phase Power</h2>
+<p>A rack area must be supplied with a relatively large electrical load.</p>
+<ol>
+<li>Explain the difference between <strong>single-phase</strong> and <strong>three-phase</strong> power.</li>
+<li>Why is three-phase power often used in data centers?</li>
+<li>What does it mean to balance the load across the phases?</li>
+<li>What can be the consequence of a highly unbalanced phase load?</li>
+<li>Explain the concept of <strong>phase sequence</strong>.</li>
+<li>Why can the correct phase sequence be important for equipment such as motors, pumps, and cooling equipment?</li>
+</ol>
+<hr>
+<h2 id="section-57">Exercise 4 – Power Factor and cos φ</h2>
+<p>An electrical load is supplied with:</p>
+<ul>
+<li>230 V</li>
+<li>10 A</li>
+<li>cos φ = 0.8</li>
+</ul>
+<p>Calculate the active power.</p>
+<p>Use:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo>=</mo><mi>U</mi><mo>⋅</mo><mi>I</mi><mo>⋅</mo><mi>c</mi><mi>o</mi><mi>s</mi><mo stretchy="false">(</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P=U\cdot I\cdot cos(\varphi )</annotation></semantics></math></span></div>
+
+
+<p>Then answer:</p>
+<ol>
+<li>What is the active power?</li>
+<li>What would the power be at cos φ = 1?</li>
+<li>What does a low power factor mean?</li>
+<li>Why is a high power factor normally desirable in a data center?</li>
+</ol>
+<hr>
+<h2 id="section-58">Exercise 5 – Follow the Power Chain</h2>
+<p>Place the following components in the correct order:</p>
+<ul>
+<li>Server</li>
+<li>Generator</li>
+<li>Utility grid / power supply</li>
+<li>Rack PDU</li>
+<li>UPS</li>
+<li>Facility power distribution</li>
+</ul>
+<p>Then draw a simple power chain.</p>
+<p>Answer:</p>
+<ol>
+<li>What is the function of the UPS?</li>
+<li>What is the function of the generator?</li>
+<li>Why are both a UPS and a generator used?</li>
+<li>What happens immediately after a failure of the normal utility power supply?</li>
+<li>Which component supplies the servers while the generator starts?</li>
+</ol>
+<hr>
+<h2 id="section-59">Exercise 6 – Failures in the Power Chain</h2>
+<p>A data center has the following power supply:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD 
+	A[Utility Grid] --&gt; B[UPS] 
+	B --&gt; C[PDU] 
+	C --&gt; D[Rack PDU] 
+	D --&gt; E[Servers]
+</pre></figure>
+
+
+<p>There is only one UPS and one PDU.</p>
+<ol>
+<li>Identify all potential <strong>Single Points of Failure</strong>.</li>
+<li>What happens if the UPS fails?</li>
+<li>What happens if the rack PDU fails?</li>
+<li>How can the solution be improved?</li>
+<li>Draw a new solution with greater redundancy.</li>
+<li>Consider how servers with dual power supplies can be used.</li>
+</ol>
+<hr>
+<h2 id="section-60">Exercise 7 – Rack-Level Power</h2>
+<p>A rack contains:</p>
+<ul>
+<li>8 servers at 500 W each</li>
+<li>2 switches at 250 W each</li>
+<li>1 storage system at 1,200 W</li>
+</ul>
+<ol>
+<li>Calculate the rack&#39;s total maximum IT power.</li>
+<li>Calculate the energy consumption over 24 hours if all equipment continuously operates at maximum power.</li>
+<li>Why is it normally not a good idea to size a PDU exactly according to the calculated load?</li>
+<li>What is the significance of redundant power supplies?</li>
+<li>How would you distribute the equipment between two rack PDUs?</li>
+</ol>
+<hr>
+<h2 id="section-61">Exercise 8 – PoE and Power Consumption</h2>
+<p>A PoE switch has 48 ports.</p>
+<p>The following devices are connected:</p>
+<ul>
+<li>20 access points at 18 W each</li>
+<li>12 IP cameras at 12 W each</li>
+<li>6 IP phones at 7 W each</li>
+</ul>
+<ol>
+<li>Calculate the total PoE power consumption.</li>
+<li>The switch has a PoE budget of 740 W. How much capacity remains?</li>
+<li>What happens if the PoE budget is exceeded?</li>
+<li>How does PoE affect the data center&#39;s total power consumption?</li>
+<li>How does increased PoE consumption affect cooling requirements?</li>
+</ol>
+<hr>
+<h2 id="section-62">Exercise 9 – Out-of-Band Management</h2>
+<p>An important switch has gone down after an incorrect configuration. The normal management connection runs through the same switch.</p>
+<ol>
+<li>Explain the problem.</li>
+<li>How can <strong>out-of-band management</strong> help?</li>
+<li>What equipment can be part of a separate management network?</li>
+<li>Why should the management network not necessarily depend on the production network?</li>
+<li>Discuss whether the power supply for the management network should also be redundant.</li>
+</ol>
+<hr>
+<h1 id="section-63">Cooling Chain</h1>
+<h2 id="section-64">Exercise 10 – CRAC, CRAH, and In-Row Cooling</h2>
+<p>Explain the difference between:</p>
+<ul>
+<li>CRAC</li>
+<li>CRAH</li>
+<li>In-row cooling</li>
+<li>Chilled water cooling</li>
+</ul>
+<p>Then create a simple cooling chain for a data center using chilled water.</p>
+<p>Example elements:</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+    A[Servers] --&gt; B[Hot Air]
+    B --&gt; C[...]
+    C --&gt; D[Outside Environment]
+
 </pre></figure>
 
 
 <p>Answer:</p>
 <ol>
-<li>Why are two routers useful?    </li>
-<li>What should happen if Router A becomes unavailable?    </li>
-<li>What role can a routing protocol play in this situation?    </li>
-<li>Name three routing protocols mentioned during Day 1.    </li>
-<li>What is <strong>ECMP</strong>, and what two advantages can it provide?</li>
+<li>Where is the heat generated?</li>
+<li>How is the heat transported away from the servers?</li>
+<li>What role does airflow play?</li>
+<li>Why can cooling close to the racks sometimes be an advantage?</li>
 </ol>
 <hr>
-<h2 id="section-41">Exercise 13 – Find the Single Points of Failure</h2>
-<p><strong>Level: K3</strong></p>
-<p>Analyze the following design:</p>
+<h2 id="section-65">Exercise 11 – Airflow Problems</h2>
+<p>A data center uses hot aisle / cold aisle.</p>
+<p>The following problems are observed:</p>
+<ul>
+<li>Empty U positions in the racks are not covered.</li>
+<li>Large cable bundles are located behind the servers.</li>
+<li>Some servers are installed in the wrong orientation.</li>
+<li>There are gaps between the racks.</li>
+<li>Cold and hot air are mixing.</li>
+</ul>
+<p>For each problem:</p>
+<ol>
+<li>Explain what happens to the airflow.</li>
+<li>Describe the consequence for temperature.</li>
+<li>Suggest a solution.</li>
+<li>Assess whether the problem can affect energy consumption.</li>
+</ol>
+<hr>
+<h2 id="section-66">Exercise 12 – Network Cables and Cooling</h2>
+<p>A rack contains 48 servers with multiple network connections each.</p>
+<p>All cables are routed in large cable bundles directly behind the servers&#39; fans.</p>
+<ol>
+<li>What problem can this create?</li>
+<li>How is airflow affected?</li>
+<li>How can this affect the servers&#39; internal fans?</li>
+<li>How can this affect the cooling system&#39;s energy consumption?</li>
+<li>Suggest a better cable design.</li>
+<li>Explain why network design and cooling cannot be considered completely independent areas.</li>
+</ol>
+<hr>
+<h2 id="section-67">Exercise 13 – Free Cooling</h2>
+<p>A data center is located in Denmark.</p>
+<p>For a large part of the year, the outdoor temperature is lower than the temperature at which traditional mechanical cooling would normally be required.</p>
+<ol>
+<li>Explain the principle of <strong>free cooling</strong>.</li>
+<li>Why can Denmark be an interesting location for free cooling?</li>
+<li>Does free cooling necessarily mean that no energy is used for cooling?</li>
+<li>Which components may still consume electrical power?</li>
+<li>How can free cooling affect PUE?</li>
+</ol>
+<hr>
+<h1 id="section-68">PUE</h1>
+<h2 id="section-69">Exercise 14 – Calculate PUE</h2>
+<p>A data center has the following average power consumption:</p>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Power</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Servers</td>
+<td>500 kW</td>
+</tr>
+<tr>
+<td>Storage</td>
+<td>100 kW</td>
+</tr>
+<tr>
+<td>Networking</td>
+<td>50 kW</td>
+</tr>
+<tr>
+<td>Cooling</td>
+<td>220 kW</td>
+</tr>
+<tr>
+<td>UPS losses</td>
+<td>30 kW</td>
+</tr>
+<tr>
+<td>Ventilation and pumps</td>
+<td>50 kW</td>
+</tr>
+<tr>
+<td>Lighting and other</td>
+<td>20 kW</td>
+</tr>
+</tbody></table>
+<h3>Task A</h3>
+<p>Calculate the total <strong>IT Power</strong>.</p>
+<h3>Task B</h3>
+<p>Calculate the total <strong>Non-IT Facility Power</strong>.</p>
+<h3>Task C</h3>
+<p>Calculate the total <strong>Facility Power</strong>.</p>
+<h3>Task D</h3>
+<p>Calculate the data center&#39;s PUE.</p>
+<p>Use:</p>
+<div class="formula"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">U</mi><mi mathvariant="normal">E</mi></mrow><mo>=</mo><mfrac><mtext>Total Facility Energy</mtext><mtext>IT Equipment Energy</mtext></mfrac></mrow><annotation encoding="application/x-tex">\mathrm{PUE}=\frac{\text{Total Facility Energy}}{\text{IT Equipment Energy}}</annotation></semantics></math></span></div>
+
+
+<h3>Task E</h3>
+<p>Explain what the calculated PUE tells you about the data center.</p>
+<h3>Task F</h3>
+<p>The data center reduces cooling power consumption by 100 kW.</p>
+<p>Calculate the new PUE.</p>
+<hr>
+<h2 id="section-70">Exercise 15 – Integrated Data Center Case</h2>
+<p>A small data center has the following situation:</p>
+<ul>
+<li>20 older servers are running at low utilization.</li>
+<li>Each server consumes 600 W.</li>
+<li>Two large switches consume 800 W each.</li>
+<li>The servers are connected to only one rack PDU.</li>
+<li>Both switches receive power from the same UPS.</li>
+<li>There is no separate out-of-band management network.</li>
+<li>Large cable bundles restrict airflow behind the racks.</li>
+<li>Blanking panels are missing.</li>
+<li>The cooling system operates at high capacity almost continuously.</li>
+<li>Free cooling is not used.</li>
+<li>Facility power is 40 kW.</li>
+<li>IT equipment power is 20 kW.</li>
+</ul>
+<h3>Part 1 – PUE</h3>
+<p>Calculate the current PUE.</p>
+<hr>
+<h3>Part 2 – Power</h3>
+<p>Identify at least <strong>three problems</strong> in the power design.</p>
+<p>Suggest improvements.</p>
+<hr>
+<h3>Part 3 – Networking</h3>
+<p>Identify at least <strong>two problems</strong> related to networking and management.</p>
+<p>Suggest improvements.</p>
+<hr>
+<h3>Part 4 – Cooling</h3>
+<p>Identify at least <strong>three problems</strong> that may affect cooling.</p>
+<p>Explain how the problems affect airflow and energy consumption.</p>
+<hr>
+<h3>Part 5 – Server Consolidation</h3>
+<p>It turns out that the 20 servers can be replaced by <strong>8 newer servers</strong>, each consuming 750 W.</p>
+<p>Calculate:</p>
+<ol>
+<li>The current server power consumption.</li>
+<li>The new server power consumption.</li>
+<li>The savings in kW.</li>
+<li>The percentage reduction in server power consumption.</li>
+</ol>
+<hr>
+<h3>Part 6 – The Overall Relationship</h3>
+<p>Explain the following chain:</p>
 <figure class="diagram"><pre class="mermaid">flowchart TD
+    A[IT workload]
+    B[Servers + Storage + Networking]
+    C[IT Power]
+    D[Heat]
+    E[Airflow]
+    F[Cooling]
+    G[Facility Power]
+    H[PUE]
 
-    Internet["Internet"] --&gt; Router["Router"]
-
-    Router --&gt; SwitchA["Switch A"]
-    Router --&gt; SwitchB["Switch B"]
-
-    SwitchA --&gt; NICA["NIC A"]
-    SwitchB --&gt; NICB["NIC B"]
-
-    NICA --&gt; Server["Server"]
-    NICB --&gt; Server
-
-    PDUA["PDU A"] --&gt; PSUA["PSU A"]
-    PDUA --&gt; PSUB["PSU B"]
-
-    PSUA --&gt; Server
-    PSUB --&gt; Server
+    A --&gt; B
+    B --&gt; C
+    C --&gt; D
+    D --&gt; E
+    E --&gt; F
+    F --&gt; G
+    G --&gt; H
 </pre></figure>
 
 
-<p>Identify <strong>all Single Points of Failure</strong> you can find.</p>
-<p>For each SPOF:</p>
-<ol>
-<li>Identify the component.    </li>
-<li>Explain what happens if it fails.    </li>
-<li>Suggest a modification that removes or reduces the Single Point Of Failre (SPOF).</li>
-</ol>
-<hr>
-<h2 id="section-42">Exercise 14 – Cooling and Airflow</h2>
-<p><strong>Level: K2–K3</strong></p>
-<p>A data center has two rows of server racks.</p>
-<p>The servers take air in through the front and exhaust hot air through the rear.</p>
-<p>Design a <strong>hot aisle / cold aisle</strong> layout.</p>
-<p>Your drawing must clearly show:</p>
-<ul>
-<li>Rack rows    </li>
-<li>Rack fronts    </li>
-<li>Rack backs    </li>
-<li>Cold aisle    </li>
-<li>Hot aisle    </li>
-<li>Direction of airflow</li>
-</ul>
-<p>Then answer:</p>
-<ol>
-<li>Why should hot and cold air be kept separate?    </li>
-<li>What is cold aisle containment?    </li>
-<li>What is hot aisle containment?    </li>
-<li>Give three potential benefits of containment.</li>
-</ol>
-<hr>
-<h1 id="section-43">Exercise 15 – Design a Highly Available Data Center</h1>
-<p><strong>Level: K4</strong></p>
-<p>You have been asked to design the basic infrastructure for a small data center hosting an important digital service.</p>
-<p>The service should continue operating even if <strong>one critical component fails</strong>.</p>
-<p>Your design must consider:</p>
-<h3>Network</h3>
-<ul>
-<li>Two server NICs    </li>
-<li>Redundant switches    </li>
-<li>Redundant network paths    </li>
-<li>Redundant routing</li>
-</ul>
-<h3>Power</h3>
-<ul>
-<li>Two server PSUs    </li>
-<li>Two PDUs    </li>
-<li>Independent power paths</li>
-</ul>
-<h3>Cooling</h3>
-<ul>
-<li>Redundant cooling capacity    </li>
-<li>Airflow management    </li>
-<li>Hot aisle / cold aisle</li>
-</ul>
-<h3>Management</h3>
-<ul>
-<li>Separate management access</li>
-</ul>
-<p>Draw one overall architecture showing your proposed solution.</p>
-<p>After drawing the architecture, perform a <strong>failure analysis</strong>.</p>
-<p>Test at least these failures:</p>
-<ol>
-<li>Switch A fails.    </li>
-<li>One network cable fails.    </li>
-<li>Router A fails.    </li>
-<li>PDU A fails.    </li>
-<li>PSU A fails.    </li>
-<li>One cooling unit fails.</li>
-</ol>
-<p>For each failure, explain:</p>
-<ul>
-<li>What stops working?    </li>
-<li>What remains operational?    </li>
-<li>Which redundant component or path takes over?    </li>
-<li>Does the service remain available?</li>
-</ul>
-<p>Finally answer:</p>
+<p>Finally, discuss:</p>
 <blockquote>
-<p><strong>Does your design contain any remaining Single Points of Failure?</strong></p>
+<p>Why can an improvement in the server or network infrastructure reduce more than just the direct power consumption of the IT equipment?</p>
 </blockquote>
-<p>If yes, identify them and explain how the design could be improved.</p>
-<h3>Final reflection</h3>
-<p>Explain the following statement in your own words:</p>
-<blockquote>
-<p><strong>A data center is not redundant simply because individual components exist in duplicate.</strong></p>
-</blockquote>
-<p>Your answer should consider dependencies between:</p>
-<ul>
-<li>Power    </li>
-<li>Network    </li>
-<li>Cooling    </li>
-<li>Physical paths    </li>
-<li>Shared infrastructure</li>
-</ul>
-<hr>
+<p>Use specific examples from the case.</p>
 </main><script>(function(JM,_g){typeof exports=="object"&&typeof module<"u"?module.exports=_g():typeof define=="function"&&define.amd?define(_g):(JM=typeof globalThis<"u"?globalThis:JM||self,JM.mermaid=_g())})(this,function(){var jWe,$We;"use strict";function JM(i){for(var s=[],u=1;u<arguments.length;u++)s[u-1]=arguments[u];var d=Array.from(typeof i=="string"?[i]:i);d[d.length-1]=d[d.length-1].replace(/\r?\n([\t ]*)$/,"");var p=d.reduce(function(y,T){var _=T.match(/\n([\t ]+|(?!\s).)/g);return _?y.concat(_.map(function(A){var P,R;return(R=(P=A.match(/[\t ]/g))===null||P===void 0?void 0:P.length)!==null&&R!==void 0?R:0})):y},[]);if(p.length){var v=new RegExp(`
 [	 ]{`+Math.min.apply(Math,p)+"}","g");d=d.map(function(y){return y.replace(v,`
 `)})}d[0]=d[0].replace(/^\r?\n/,"");var b=d[0];return s.forEach(function(y,T){var _=b.match(/(?:^|\n)( *)$/),A=_?_[1]:"",P=y;typeof y=="string"&&y.includes(`
